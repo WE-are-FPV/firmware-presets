@@ -1,0 +1,248 @@
+#$ TITLE: JeNo 5.1"
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: JeNo, 6S, Freestyle, 5 inch, 5", Cinematic, WE are FPV, WAF
+#$ AUTHOR: Jerome @jejefpv
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://www.wearefpv.fr/"><img src="https://www.wearefpv.fr/wp-content/uploads/2023/02/WaF-Logo-Preset.png" width="327px" height="97" style="margin-left: auto; margin-right: auto; display: block;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: ### JeNo 5.1" Preset
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>The JeNo is a sturdy OpenSource frame, inspired from the Apex, natively O3 Air Unit compatible and customizable with many options. Visit the
+#$ DESCRIPTION: <a href="https://www.printables.com/fr/model/339099-jeno-51-drone-frame">JeNo official Printables Page</a> to learn more about it.
+#$ DESCRIPTION: 
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: <b>Choose the following options from the drop-down:</b>
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: * Select ESCs protocol and PIDs loop frequency
+#$ DESCRIPTION: * Pick PIDs option(s)
+#$ DESCRIPTION: * Pick Filtering option(s)
+#$ DESCRIPTION: * Optionally, pick your Radio Link
+#$ DESCRIPTION: 
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: <b>Recommendations :</b>
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: * If you fly <b>without any Action Cam</b>, try to <b>center the lipo</b> on the Top plate
+#$ DESCRIPTION: * <b>Using RPM Filter is advised</b>, although it also works great without it (you can install <a href="https://esc-configurator.com/">Bluejay</a> on BLHeli_S ESCs)
+#$ DESCRIPTION: * Basic preset's tune is already quite high. Enable "High tune" and "High performance filter" only <b>after having tested default settings</b>.
+#$ DESCRIPTION: * Apply your specific RC Link preset <b>before</b> this preset (or use the generic ones provided with this preset)
+#$ DESCRIPTION: * If you manually applied a RC Link preset, <b>make sure RC Smoothing Auto Factor is not too high</b> (45 is a good compromise)
+#$ DESCRIPTION: * Enabling <b>I-term Relax cutoff</b> at 17 makes the quad feel more "rigid" compared to the default value (15)
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Enjoy!
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION:
+#$ DESCRIPTION: * [FORUM SUPPORT/FEEDBACK](https://forum.wearefpv.fr/topic/19574-jeno-51-un-ch%C3%A2ssis-custom-modulaire-avec-fov-d%C3%A9gag%C3%A9-o3)
+#$ DESCRIPTION:
+#$ DESCRIPTION: <br>
+#$ DESCRIPTION: Designed by <b>Je</b>rome and <b>No</b>chamo from the French <a href="https://www.wearefpv.fr/">WE are FPV</a> community.
+#$ DESCRIPTION: <br>
+
+# -- Reset PIDs and Filters to default --
+#$ INCLUDE: presets/4.4/tune/defaults_tune_filters.txt
+
+# ----- ESCs' protocol selection -----
+#$ OPTION_GROUP BEGIN: Choose <b>ONE</b> ESCs' protocol & PIDs loop Freq. :
+
+    #$ OPTION BEGIN (UNCHECKED): <b>WITH RPM</b> DShot600 - 8Khz (F7 & up + 8K gyro)
+		
+		set pid_process_denom = 1
+		set motor_pwm_protocol = DSHOT600
+                
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): <b>WITH RPM</b> Dshot300 - 4Khz (F4 or BMI gyro)
+	
+		set pid_process_denom = 2
+		set motor_pwm_protocol = DSHOT300
+        
+    #$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): <b>NO RPM</b> Dshot600 - 8Khz (8K Gyro)
+	
+		set pid_process_denom = 1
+		set motor_pwm_protocol = DSHOT600
+        
+    #$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): <b>NO RPM</b> Dshot300 - 4Khz (BMI gyro)
+	
+		set pid_process_denom = 2
+		set motor_pwm_protocol = DSHOT300
+        
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+# ----- PIDs for JeNo, load safe tune (already quite high) -----
+set simplified_master_multiplier = 90
+set simplified_d_gain = 160
+set simplified_pi_gain = 150
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 85
+set simplified_pitch_d_gain = 105
+set simplified_dterm_filter_multiplier = 140
+set dyn_idle_min_rpm = 30
+
+#$ OPTION_GROUP BEGIN: PIDs options :
+
+    #$ OPTION BEGIN (CHECKED): I-term relax @17
+
+        set iterm_relax_cutoff = 17
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): ESCs @48 Khz or more
+
+        set thrust_linear = 20
+
+    #$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): High tune (clean build)
+
+        set simplified_master_multiplier = 100
+
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+# ----- Filters Base Setup (load safe filtering, already quite reduced) -------
+set dshot_bidir = OFF
+set simplified_gyro_filter_multiplier = 140
+set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set dyn_notch_count = 3
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 600
+set yaw_lowpass_hz = 0
+
+set simplified_dterm_filter_multiplier = 140
+
+#$ OPTION_GROUP BEGIN: Filtering options :
+
+    #$ OPTION BEGIN (CHECKED): Enable RPM filter (if supported)
+
+        set dshot_bidir = ON
+		set rpm_filter_harmonics = 3
+		set rpm_filter_q = 500
+		set rpm_filter_min_hz = 100
+		set rpm_filter_fade_range_hz = 50
+		set dyn_notch_count = 1
+		set dyn_notch_q = 500
+		set dyn_idle_min_rpm = 30
+		set motor_poles = 14
+
+    #$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): High performance (clean build)
+	
+		set simplified_gyro_filter_multiplier = 155
+		set simplified_dterm_filter_multiplier = 155
+
+        set rpm_filter_harmonics = 2
+        set dyn_notch_count = 1
+		set dyn_notch_min_hz = 150
+
+    #$ OPTION END 
+
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Choose RC Link :
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire Dynamic
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+        
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        set feedforward_averaging = OFF
+        set feedforward_smooth_factor = 15
+        set feedforward_jitter_factor = 10
+        set feedforward_boost = 10
+
+		set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz Locked
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        set feedforward_averaging = OFF
+        set feedforward_smooth_factor = 0
+        set feedforward_jitter_factor = 10
+        set feedforward_boost = 5
+
+		set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz Locked
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        set feedforward_averaging = OFF
+        set feedforward_smooth_factor = 30
+        set feedforward_jitter_factor = 7
+
+		set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Tracer/ELRS 250Hz
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 35
+        set feedforward_jitter_factor = 4
+        set feedforward_boost = 18
+
+		set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
+        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        set feedforward_averaging = 2_POINT
+        set feedforward_smooth_factor = 65
+        set feedforward_jitter_factor = 3
+        set feedforward_boost = 18
+
+		set rc_smoothing_auto_factor = 45
+        set rc_smoothing_auto_factor_throttle = 45
+
+    #$ OPTION END
+
+#$ OPTION_GROUP END
+
+simplified_tuning apply

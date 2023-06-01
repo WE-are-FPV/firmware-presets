@@ -34,6 +34,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: * Si vous volez <b>sans Action Cam</b>, essayer de <b>centrer la lipo</b> sur la Top plate
 #$ DESCRIPTION: * <b>L'usage du RPM Filter est conseillé</b>, néanmoins, ça marche aussi très bien sans (vous pouvez installer <a href="https://esc-configurator.com/">Bluejay</a> sur des ESCs BLHeli_S)
+#$ DESCRIPTION: * Choisissez le protocole des ESCs et la fréquence de la boucle PID en fonction de votre <b>gyro</b>, du <b>microcontrolleur</b> de votre FC et de l'utilisation (ou non) du <b>RPM filter</b> (les indications sont entre parenthèses).
 #$ DESCRIPTION: * Le tune de base du preset est déjà assez poussé. N'activez les options "Tune poussé" et "Filtrage hautes performances" seulement <b>après avoir testé avec les réglages par défaut</b>.
 #$ DESCRIPTION: * Appliquez votre preset de lien Radio <b>avant</b> ce preset (ou utilisez l'un des génériques fournis avec ce preset)
 #$ DESCRIPTION: * Si vous avez manuellement appliqué un preset de lien Radio, <b>assurez vous que le RC Smoothing Auto Factor n'est pas trop élevé</b> (45 est un bon compromis)
@@ -64,7 +65,7 @@
                 
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): <b>AVEC RPM</b> Dshot300 - 4Khz (F4 ou gyro BMI)
+    #$ OPTION BEGIN (UNCHECKED): <b>AVEC RPM</b> Dshot300 - 4Khz (F4 et gyro 8K)
 	
 		set pid_process_denom = 2
 		set motor_pwm_protocol = DSHOT300
@@ -78,9 +79,16 @@
         
     #$ OPTION END
 	
-	#$ OPTION BEGIN (UNCHECKED): <b>SANS RPM</b> Dshot300 - 4Khz (Gyro BMI)
+	#$ OPTION BEGIN (UNCHECKED): <b>SANS RPM</b> Dshot300 - 4Khz (Gyro 8K)
 	
 		set pid_process_denom = 2
+		set motor_pwm_protocol = DSHOT300
+        
+    #$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): Dshot300 - 3.2Khz (<b>Gyro BMI</b>) (avec/sans RPM)
+	
+		set pid_process_denom = 1
 		set motor_pwm_protocol = DSHOT300
         
     #$ OPTION END

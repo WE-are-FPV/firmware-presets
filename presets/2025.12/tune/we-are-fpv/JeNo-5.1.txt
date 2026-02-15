@@ -152,6 +152,7 @@ set simplified_dterm_filter_multiplier = 140
 		set rpm_filter_q = 500
 		set rpm_filter_min_hz = 100
 		set rpm_filter_fade_range_hz = 50
+		set rpm_filter_weights = 90,50,90
 		set dyn_notch_count = 1
 		set dyn_notch_q = 500
 		set dyn_idle_min_rpm = 30
@@ -164,7 +165,7 @@ set simplified_dterm_filter_multiplier = 140
 		set simplified_gyro_filter_multiplier = 155
 		set simplified_dterm_filter_multiplier = 155
 
-        set rpm_filter_harmonics = 2
+        set rpm_filter_weights = 90,30,80
         set dyn_notch_count = 1
 		set dyn_notch_min_hz = 150
 

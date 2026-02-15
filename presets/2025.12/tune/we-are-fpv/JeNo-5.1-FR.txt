@@ -1,5 +1,5 @@
 #$ TITLE: JeNo 5.1" (FR)
-#$ FIRMWARE_VERSION: 4.5
+#$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: JeNo, 6S, Freestyle, 5 pouces, 5", Cinematic, WE are FPV, WAF
@@ -9,10 +9,11 @@
 #$ PARSER: MARKED
 
 #$ DESCRIPTION: <a href="https://www.wearefpv.fr/"><img src="https://www.wearefpv.fr/wp-content/uploads/2023/02/WaF-Logo-Preset.png" width="327px" height="97" style="margin-left: auto; margin-right: auto; display: block;"/></a>
+#$ DESCRIPTION: <p style="color:red">⚠ Attention : preset 2025.12 en cours de test (mais ça a l'air ok) ⚠</p>
 #$ DESCRIPTION:
 #$ DESCRIPTION: ### Preset pour le JeNo 5.1"
 #$ DESCRIPTION:
-#$ DESCRIPTION: <br>Le JeNo est un châssis robuste, inspiré de l'Apex, nativement compatible Air Unit O3 et personnalisable avec de nombreuses options. Visitez la
+#$ DESCRIPTION: <br>Le JeNo est un châssis robuste, inspiré de l'Apex, nativement compatible Air Unit O3/O4 Pro et personnalisable avec de nombreuses options. Visitez la
 #$ DESCRIPTION: <a href="https://www.printables.com/fr/model/339099-jeno-51-drone-frame">page Printables officielle du JeNo</a> pour en savoir plus.
 #$ DESCRIPTION: 
 #$ DESCRIPTION: <br>
@@ -36,8 +37,8 @@
 #$ DESCRIPTION: * <b>L'usage du RPM Filter est conseillé</b>, néanmoins, ça marche aussi très bien sans (vous pouvez installer <a href="https://esc-configurator.com/">Bluejay</a> sur des ESCs BLHeli_S)
 #$ DESCRIPTION: * Choisissez le protocole des ESCs et la fréquence de la boucle PID en fonction de votre <b>gyro</b>, du <b>microcontrolleur</b> de votre FC et de l'utilisation (ou non) du <b>RPM filter</b> (les indications sont entre parenthèses).
 #$ DESCRIPTION: * Le tune de base du preset est déjà assez poussé. N'activez les options "Tune poussé" et "Filtrage hautes performances" seulement <b>après avoir testé avec les réglages par défaut</b>.
-#$ DESCRIPTION: * Appliquez votre preset de lien Radio <b>avant</b> ce preset (ou utilisez l'un des génériques fournis avec ce preset)
-#$ DESCRIPTION: * Si vous avez manuellement appliqué un preset de lien Radio, <b>assurez vous que le RC Smoothing Auto Factor n'est pas trop élevé</b> (45 est un bon compromis)
+#$ DESCRIPTION: * Appliquez votre preset de lien Radio <b>avant</b> ce preset (ou utilisez l'un de ceux fournis avec ce preset)
+#$ DESCRIPTION: * Si vous avez manuellement appliqué un preset de lien Radio, <b>assurez vous que le RC Smoothing Auto Factor n'est pas trop élevé</b> (30-45 est un bon compromis)
 #$ DESCRIPTION: * L'activation du <b>I-term Relax cutoff</b> avec une valeur de 17 donne un feeling un peu plus "rigide" au quad comparé à la valeur par défaut (15)
 #$ DESCRIPTION:
 #$ DESCRIPTION: <br>
@@ -53,7 +54,8 @@
 #$ DESCRIPTION: <br>
 
 # -- Reset PIDs and Filters to default --
-#$ INCLUDE: presets/4.5/tune/defaults_tune_filters.txt
+#$ INCLUDE: presets/2025.12/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # ----- ESCs' protocol selection -----
 #$ OPTION_GROUP BEGIN: Choisir <b>UN</b> protocole ESCs & une fréq de boucle PIDs :
@@ -99,7 +101,7 @@
 set simplified_master_multiplier = 90
 set simplified_d_gain = 160
 set simplified_pi_gain = 150
-set simplified_dmax_gain = 0
+set simplified_d_max_gain = 0
 set simplified_feedforward_gain = 85
 set simplified_pitch_d_gain = 105
 set simplified_dterm_filter_multiplier = 140
@@ -170,87 +172,126 @@ set simplified_dterm_filter_multiplier = 140
 
 #$ OPTION_GROUP END
 
+simplified_tuning apply
+
 #$ OPTION_GROUP BEGIN: Choisir un lien Radio :
 
-    #$ OPTION BEGIN (UNCHECKED): Crossfire Dynamic
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+    #$ OPTION BEGIN (UNCHECKED): Aucun
         
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire/ELRS 50Hz Locked
+        #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
         set feedforward_averaging = OFF
-        set feedforward_smooth_factor = 15
-        set feedforward_jitter_factor = 10
-        set feedforward_boost = 10
+		set feedforward_jitter_factor = 12
+		set feedforward_boost = 5
+		
+		#$ INCLUDE: presets/2025.12/rc_link/generic/50hz_freestyle.txt
 
-		set rc_smoothing_auto_factor = 45
-        set rc_smoothing_auto_factor_throttle = 45
+		set rc_smoothing_auto_factor = 30
+        set rc_smoothing_auto_factor_throttle = 30
 
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz Locked
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+    #$ OPTION BEGIN (UNCHECKED): Crossfire/ELRS 150Hz Locked
+        #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
 
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
         set feedforward_averaging = OFF
-        set feedforward_smooth_factor = 0
-        set feedforward_jitter_factor = 10
-        set feedforward_boost = 5
+		set feedforward_jitter_factor = 7
+		
+		#$ INCLUDE: presets/2025.12/rc_link/generic/150hz_freestyle.txt
 
-		set rc_smoothing_auto_factor = 45
-        set rc_smoothing_auto_factor_throttle = 45
-
-    #$ OPTION END
-
-    #$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz Locked
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
-
-        feature RX_SERIAL
-        set serialrx_provider = CRSF
-
-        set feedforward_averaging = OFF
-        set feedforward_smooth_factor = 30
-        set feedforward_jitter_factor = 7
-
-		set rc_smoothing_auto_factor = 45
-        set rc_smoothing_auto_factor_throttle = 45
+		set rc_smoothing_auto_factor = 30
+        set rc_smoothing_auto_factor_throttle = 30
 
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Tracer/ELRS 250Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+        #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
 
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
         set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 35
-        set feedforward_jitter_factor = 4
-        set feedforward_boost = 18
+		set feedforward_jitter_factor = 6
+		
+		#$ INCLUDE: presets/2025.12/rc_link/generic/250hz_freestyle.txt
 
-		set rc_smoothing_auto_factor = 45
-        set rc_smoothing_auto_factor_throttle = 45
+		set rc_smoothing_auto_factor = 30
+        set rc_smoothing_auto_factor_throttle = 30
 
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
-        #$ INCLUDE: presets/4.3/rc_link/defaults.txt
+        #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
 
         feature RX_SERIAL
         set serialrx_provider = CRSF
 
         set feedforward_averaging = 2_POINT
-        set feedforward_smooth_factor = 65
-        set feedforward_jitter_factor = 3
-        set feedforward_boost = 18
+		set feedforward_jitter_factor = 5
+		
+		#$ INCLUDE: presets/2025.12/rc_link/generic/500hz_freestyle.txt
 
-		set rc_smoothing_auto_factor = 45
-        set rc_smoothing_auto_factor_throttle = 45
+		set rc_smoothing_auto_factor = 30
+        set rc_smoothing_auto_factor_throttle = 30
+
+    #$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
+        #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        set feedforward_averaging = 2_POINT
+		set feedforward_jitter_factor = 5
+		
+		#$ INCLUDE: presets/2025.12/rc_link/generic/1000hz_freestyle.txt
+
+		set rc_smoothing_auto_factor = 30
+        set rc_smoothing_auto_factor_throttle = 30
+
+    #$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): DJI Normal
+        #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+
+        feature RX_SERIAL
+        set serialrx_provider = SBUS
+		set sbus_baud_fast = OFF
+		
+		set feedforward_averaging = OFF
+		set feedforward_jitter_factor = 12
+		set rc_smoothing_setpoint_cutoff = 25
+		set rc_smoothing_throttle_cutoff = 25
+		
+		set rc_smoothing_auto_factor = 30
+        set rc_smoothing_auto_factor_throttle = 30
+
+    #$ OPTION END
+	
+	#$ OPTION BEGIN (UNCHECKED): DJI SBUS Fast
+        #$ INCLUDE: presets/2025.12/rc_link/defaults.txt
+
+        feature RX_SERIAL
+        set serialrx_provider = SBUS
+		set sbus_baud_fast = ON
+
+		set feedforward_averaging = OFF
+		set feedforward_jitter_factor = 12
+		set rc_smoothing_setpoint_cutoff = 25
+		
+		set rc_smoothing_auto_factor = 30
+        set rc_smoothing_auto_factor_throttle = 30
 
     #$ OPTION END
 
 #$ OPTION_GROUP END
-
-simplified_tuning apply

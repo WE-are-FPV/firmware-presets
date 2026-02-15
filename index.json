@@ -47,7 +47,8 @@
       "OPTION_CHECKED": "(checked)",
       "OPTION_UNCHECKED": "(unchecked)",
       "BEGIN_OPTION_GROUP_DIRECTIVE": "option_group begin",
-      "END_OPTION_GROUP_DIRECTIVE": "option_group end"
+      "END_OPTION_GROUP_DIRECTIVE": "option_group end",
+      "EXCLUSIVE_OPTION_GROUP": "(exclusive)"
     },
     "PresetStatusEnum": [
       "OFFICIAL",
@@ -133,12 +134,14 @@
   },
   "uniqueValues": {
     "firmware_version": [
+      "2025.12",
       "4.2",
       "4.3",
       "4.4",
       "4.5"
     ],
     "category": [
+      "BNF",
       "FILTERS",
       "LEDS",
       "OSD",
@@ -152,23 +155,35 @@
       "Alex Campbell (Chief)",
       "Alex Vanover",
       "antonig",
+      "Armando Gallegos (Mondo)",
       "AyyyKayyy - Anthony Knight",
+      "Benjamin Freelove",
       "benlumley",
+      "bensonk",
       "Betaflight",
+      "Black Bird FPV (Tune) / Saturn_FPV (Preset)",
       "BMSThomas",
       "Botgrinder",
+      "CADDXFPV",
+      "Chris Rosser",
       "ctzsnooze",
+      "ctzsnooze, SupaflyFPV",
       "Daniel Appel / Tehllama",
       "Davide FPV (Davide Angeletti)",
       "Directory",
+      "dmak",
       "Evan Turner (Headsup)",
       "Feisar",
       "Foxeer Harvey",
+      "FPV_Cam",
       "FPVian",
       "Garban",
+      "Grey pang",
       "IllusionFpv",
       "Ivan Efimov (Limon)",
       "Jakub Espandr (FlyCamCzech)",
+      "jawz101",
+      "JazzMutant",
       "Jerome @jejefpv",
       "Joshua Bardwell",
       "Justice - Gary Kent",
@@ -180,6 +195,7 @@
       "MrAlucardDante",
       "Neil Marek (Grower)",
       "NemesisXB",
+      "Nicholas Young (Fader FPV)",
       "QuadMcFly (Ryan Harrell)",
       "Sartor",
       "Sjoer van der Ploeg",
@@ -188,11 +204,14 @@
       "sugarK",
       "SupaflyFPV",
       "UAV Tech (Mark Spatz)",
+      "Utka v tapkah",
+      "Viki Baarathi",
+      "Volker Göschl-Covrljan",
+      "YarosFPV (Yaroslav Syubayev)",
       "ZoeFPV"
     ],
     "keywords": [
       "\\\\GAS",
-      "03",
       "10\"",
       "100 euro fpv",
       "1000Hz",
@@ -206,27 +225,41 @@
       "1S",
       "2.5in",
       "2.5W",
+      "20",
       "2022",
       "2023",
+      "2024",
+      "2024 sliders",
+      "2025.12",
       "20ms",
+      "25",
       "2500mW",
       "250Hz",
       "2in",
       "2ms",
-      "2s",
-      "3 Inch",
+      "2S",
+      "3",
+      "3 inch",
+      "3.5",
       "3.5in",
       "3\"",
+      "30",
+      "35",
       "3d",
       "3in",
-      "3s",
+      "3S",
+      "4",
       "4 inch",
       "4\"",
+      "40",
       "4in",
-      "4s",
+      "4in1",
+      "4S",
+      "5",
       "5 In",
       "5 inch",
       "5 pouces",
+      "5.5",
       "5\"",
       "500Hz",
       "50Hz",
@@ -241,8 +274,10 @@
       "666Hz",
       "6in",
       "6S",
+      "7",
       "7 inch",
       "7\"",
+      "75mm",
       "7in",
       "8\"",
       "8in",
@@ -254,7 +289,11 @@
       "acro",
       "Acrobaix",
       "actual",
+      "aio",
+      "aio5",
+      "air",
       "air unit",
+      "air75",
       "akk",
       "AlexFPV",
       "analog",
@@ -270,33 +309,57 @@
       "bardwell",
       "basher",
       "basic",
+      "beginner",
       "betaflight",
+      "betafpv",
+      "bezerkrc",
+      "Black Bird FPV",
+      "Blackbird",
+      "blackbox",
       "BMS",
       "BMSThomas",
+      "bnf",
       "botgrinder",
       "brushless",
+      "Caddx",
       "Cgo",
       "Chief",
+      "chris",
+      "cine",
+      "cine25",
+      "cine35",
+      "cine80",
+      "CineApe",
       "cinelifter",
       "CineLog",
-      "cinematic",
+      "Cinelog30V3HD",
+      "Cinelog30V3WTF",
+      "Cinematic",
       "cinewhoop",
       "clean",
       "clear",
       "colour change",
+      "COMPRESSOR",
       "Crossfire",
       "CRSF",
       "ctzsnooze",
       "CTZsoonze",
       "custom commands",
+      "darwin",
+      "darwinfpv",
       "davide",
       "davide fpv",
       "DDC",
       "default",
       "defaults",
+      "der_V",
       "diatone",
+      "diff",
       "Digipick",
       "digital",
+      "din",
+      "dindrones",
+      "disable",
       "displayport",
       "divimath",
       "DJI",
@@ -309,7 +372,9 @@
       "expert",
       "express",
       "Extreme",
+      "fader fpv",
       "feisar",
+      "fictive flame",
       "filter",
       "filtering",
       "filters",
@@ -323,24 +388,27 @@
       "Freedom",
       "freedom spec",
       "FreedomSpec",
-      "freestyle",
+      "Freestyle",
       "freesytle",
       "freetyle",
+      "FreshBread",
       "frsky",
       "fx2",
       "Garban",
       "geprc",
       "ghost",
       "GHST",
+      "Gofilm20",
       "GoPro",
       "GPS",
       "GPS_Rescue",
       "HD",
       "HD video",
       "HDOSD",
-      "HDzero",
+      "HDZERO",
       "Headsup",
       "hot",
+      "HS5",
       "HV",
       "IllusionFpv",
       "immersion",
@@ -348,65 +416,82 @@
       "ImpulseRC",
       "IRC",
       "IRC Tramp",
+      "JazzMutant",
       "JeNo",
       "jhemcu",
       "juicy",
       "justice",
+      "JWebb",
       "karate",
-      "karatebrot",
+      "KarateBrot",
       "kim",
       "LeadFingers",
       "League",
       "leds",
-      "Limon",
+      "limon",
       "link",
       "Llama",
+      "log",
+      "logging",
       "Long Range",
+      "longrange",
       "loRanger",
+      "lr5",
       "mamba",
       "Marek",
       "mck",
       "meteor",
+      "MGP",
       "MinChan",
       "MM",
+      "mode",
+      "modes",
+      "mountain surfing",
       "mouse fpv",
       "mr nice",
       "mrnice",
       "MSP",
       "MSP VTX",
       "msp-osd",
+      "MtnSurf",
       "MultiGP",
       "MultiVoltage",
       "nano",
       "nanohawk",
+      "navigation",
       "Neil",
+      "neuron",
+      "Next Level",
       "nice",
+      "nicholas young",
       "nmea",
       "no rpm",
       "noisy",
-      "normal",
-      "O3",
+      "Normal",
+      "O3 & O4",
       "O3 air unit",
       "Omni",
       "OpenRacer",
       "OpenVTx",
       "OSD",
+      "ozr",
       "panda",
       "pandarc",
       "pid",
       "PIDtoolbox",
       "pro32",
+      "Protos",
       "Pure Race",
       "quaddiction",
       "quick",
       "R9",
-      "race",
+      "Race",
       "race rates ctzsnooze actual",
       "race v1",
       "race v2",
       "Race250",
       "Race500",
-      "racing",
+      "Racing",
       "rad",
       "ranging",
       "rates",
@@ -414,9 +499,12 @@
       "rc link",
       "rc_link",
       "rc_smoothing",
+      "recopter",
       "Redpine",
       "reset",
+      "rosser",
       "rpm",
+      "rubberquads",
       "rush",
       "rush tank",
       "rushfpv",
@@ -428,10 +516,14 @@
       "SA 2.1",
       "sa2.0",
       "sa20",
-      "sbang",
+      "SBANG",
       "sbus",
       "SBUS fast",
+      "secretfader",
+      "settek",
+      "Sh*t pilot",
       "shames",
+      "Sharjah",
       "shitpilot",
       "sliders",
       "Smart",
@@ -443,6 +535,7 @@
       "spec",
       "spec racing",
       "speedybee",
+      "squirrel",
       "StingersSwarm",
       "Street",
       "Street League",
@@ -453,39 +546,52 @@
       "sugarK",
       "Supafly",
       "SupaflyFPV",
+      "switch",
       "T3",
       "tank solo",
       "tank ultimate",
       "TBS",
+      "TBS Core",
       "tbs sa",
       "Team Black Sheep",
       "texas",
       "thicc",
       "tiny",
       "tiny tank",
+      "TinyApe",
       "tinytrainer",
       "toothpic",
-      "Toothpick",
+      "toothpick",
       "Tracer",
       "trainer",
       "tramp",
       "transmitter",
       "tune",
       "twig",
+      "tx1600",
       "tx5m.1",
       "tx800",
+      "tyrant",
+      "ul10",
+      "ul5",
+      "ul7",
+      "ul8",
       "ultra",
       "ultra 1000",
       "ultralite",
+      "underground",
       "unify",
       "unify pro",
       "upside down",
+      "UWL",
       "vanover",
       "very",
       "very clean",
       "very noisy",
+      "viki",
       "viper",
       "viper lite",
+      "Viper Racing",
       "vista",
       "vt5804",
       "vt5804bat",
@@ -500,12 +606,1551 @@
       "whooptopia",
       "world champion",
       "wtfos",
+      "YAROSFPV",
       "youtube",
       "zoe",
       "zoeFPV"
     ]
   },
   "presets": [
+    {
+      "fullPath": "presets/2025.12/osd/defaults.txt",
+      "hash": "82aecb211c6ed2fc0d6bcbefd59c2535b324c34f73c1c2649cdb821adaf2b63f",
+      "title": "Default 2025.12 OSD settings",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "OSD"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/FaderFPV_DJI.txt",
+      "hash": "70e7f9fcda229496c68e8a0361a7ab5cff2f2eb2370d94d71b214d7d3e6e14c8",
+      "title": "Nicholas Young DJI OSD",
+      "firmware_version": [
+        "4.5",
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "fader fpv",
+        "secretfader",
+        "nicholas young",
+        "fictive flame"
+      ],
+      "author": "Nicholas Young (Fader FPV)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/JazzMutant_HDZero_osd.txt",
+      "hash": "fe9a089a9f86e1fdf676c73beec4558f8c895f2eb7d317f3e0a4d9989d779d86",
+      "title": "JazzMutant HDZero OSD",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "HDZERO",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "JazzMutant",
+        "Racing"
+      ],
+      "author": "JazzMutant",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/sugark_hdzero_osd.txt",
+      "hash": "656a74f10de5a16a67ee453e84a4e87e2b4d03debb96ef45a1c52d7b6a1f26d3",
+      "title": "sugarK HDzero OSD",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "hdzero",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "sugarK",
+        "racing"
+      ],
+      "author": "sugarK",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/UAV_tech_Analog.txt",
+      "hash": "80cab8b4197661c9232b38564da4ee8e2ad10c0f89ea9975038b7e2b686274ef",
+      "title": "UAV Tech - Analog",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "analog"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/UAV_tech_DJI.txt",
+      "hash": "de9e7c169ff14594f454ccb2330c5b289ea946f8cf2c145682a960fff105e7ba",
+      "title": "UAV Tech - DJI",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "DJI"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/osd/UAV_tech_DJI_GPS.txt",
+      "hash": "a2f45fc44448579f611fe2e4e8bf6145fec0ef42b17952287b6c0344b0e1d990",
+      "title": "UAV Tech - DJI with GPS",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "DJI",
+        "GPS"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/other/blackbox_disable.txt",
+      "hash": "88b85f4fcc0dc75355af77a5d5a117e42a678fad18be0891178a437b456e13aa",
+      "title": "2025.12 Blackbox disable settings",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OTHER",
+      "status": "OFFICIAL",
+      "keywords": [
+        "blackbox",
+        "logging",
+        "log",
+        "disable",
+        "sugarK"
+      ],
+      "author": "sugarK",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/other/reset_gps.txt",
+      "hash": "b2e065b7bbf6eef24d377a596428f2978800214de8c3a5606737c725d559e527",
+      "title": "Reset GPS to 2025.12 default settings",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "OTHER",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "GPS",
+        "GPS_Rescue"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rates/defaults.txt",
+      "hash": "28417e3b786a5d364fcc6c2a3c37207fb9ebb6c571364468096702f46c8835bb",
+      "title": "Default rates",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RATES",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "rates",
+        "actual"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rates/FaderFPV.txt",
+      "hash": "595799dbfa34a2051602533e6c4e9acd608df7ea237383e2db09264629c94b5c",
+      "title": "Nicholas Young Rates",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "fader fpv",
+        "secretfader",
+        "nicholas young",
+        "fictive flame"
+      ],
+      "author": "Nicholas Young (Fader FPV)",
+      "priority": 10000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/defaults.txt",
+      "hash": "db1fdbfe8ff47d4e8c263f651365dd07f7005933bc7311a63e583067b3ba6a70",
+      "title": "Reset RC related settings",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "Rx",
+        "RC",
+        "reset",
+        "rc link",
+        "rc_link",
+        "smoothing",
+        "rc_smoothing"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/dji/DJI_Normal.txt",
+      "hash": "f406ea99733d5e40c546b061064a14f32bd9fac2d11313aad775b043609538a1",
+      "title": "DJI Normal",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "DJI",
+        "rc",
+        "link",
+        "transmitter"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/dji/DJI_SBUS_Fast.txt",
+      "hash": "a38fdec735ce96d6b5c6a91fa65a0eacdc24d7fdc885bc31a8c8f94ea23f454f",
+      "title": "DJI SBUS FAST",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "DJI",
+        "rc",
+        "link",
+        "SBUS fast"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_1000hz.txt",
+      "hash": "c036b3761e168f5ae3be7b046d7eb73f0ca0e13e883e0abd99540d30fba1305c",
+      "title": "ExpressLRS 1000Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "1000Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_150hz.txt",
+      "hash": "1066894b2243034a5c53ad1923615251bf19fcc712408a95a51c67aa9afd5acc",
+      "title": "ExpressLRS 150Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_250hz.txt",
+      "hash": "845feb297cc14f785eac0cafbd3bea34bc5c9e4b466c481fdb689b90994ed180",
+      "title": "ExpressLRS 250Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_500hz.txt",
+      "hash": "3b9a533f56325fdffdedd77dd768417d7c3fd52860e09d82fa0ae5d23d0f73b3",
+      "title": "ExpressLRS 500Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "500Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/elrs/elrs_50hz.txt",
+      "hash": "ac86b881651b5e29f0110eae6b06bfb5bfbd454125b89f00aa2061bdc7265117",
+      "title": "ExpressLRS 50Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "ELRS",
+        "express",
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze, SupaflyFPV",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/frsky/frsky_sbus_fport.txt",
+      "hash": "9500948e733d8cee3c81486dc59a45850109cdbecb0bfe870ffd4dd9bd2f8026",
+      "title": "FrSky Sbus or FPort",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "frsky",
+        "sbus",
+        "fport",
+        "9ms",
+        "111hz",
+        "rc",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/1000hz_freestyle.txt",
+      "hash": "0283ee264656bbe2bfbc87a191dc4e7179e195bc33a011bde41a8616a4d09552",
+      "title": "Generic 1000Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "1000Hz",
+        "1ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing",
+        "ELRS"
+      ],
+      "author": "Sugar K",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/1000hz_race.txt",
+      "hash": "d8cb34bebec7992902ed99def7557045e805a4f15ac8d4566cc0f520212443e9",
+      "title": "Generic 1000z Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "1000Hz",
+        "1ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing",
+        "ELRS"
+      ],
+      "author": "Sugar K",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_cinematic.txt",
+      "hash": "74e23d8082afb28ac8d8d0d1ed71eaa1b22a6aa2eece46edd1e4207a25e4dd12",
+      "title": "Generic 150Hz Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_freestyle.txt",
+      "hash": "25c8ec337599e69f76d9ba74b342ea0dc06fda5b076c6e92c1131a17941f1fec",
+      "title": "Generic 150Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_hd_freestyle.txt",
+      "hash": "b61286d8c4fbbfb5a8d650bd0f16df0d3b6971a45803b124a269be8f0ce7665a",
+      "title": "Generic 150Hz HD Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_race.txt",
+      "hash": "4393731c8bdb38bd565a70fc055996a0daeaf7e5d8b8e0c2af14c78f16a086d7",
+      "title": "Generic 150Hz Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/150hz_ultra_cinematic.txt",
+      "hash": "db8905f83de7b38d4a50750d822611e6a58fa29e268e59a5ec80cea7d0708752",
+      "title": "Generic 150Hz Ultra Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_cinematic.txt",
+      "hash": "1a80f0b6bd11d5a8bfa901156d6fb42b6e3d4b1c542306d5b52d5b47029c9fc8",
+      "title": "Generic 250Hz Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_freestyle.txt",
+      "hash": "930383e0e630f2e41440e18b96f962a2e61ca938af076a6c5dcb4c29160c6280",
+      "title": "Generic 250Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_hd_freestyle.txt",
+      "hash": "bf9f4c54d9934533c83e373acbc69cdfc092c04b29b369846b62b0c011cef119",
+      "title": "Generic 250Hz HD Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_race.txt",
+      "hash": "376c9746fb613b13624201ae439b1e70552b37d375557d58308638d10732d64b",
+      "title": "Generic 250Hz Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/250hz_ultra_cinematic.txt",
+      "hash": "654536a16719c7b165da6b3a468d8c8cfd63fa6f5c05264afbfafa0eb219ca65",
+      "title": "Generic 250Hz Ultra Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_cinematic.txt",
+      "hash": "2548e8c29acc38366045c08d5d9fd4751c4bab5aaf8a2cf8ff6f23f8b0fd948b",
+      "title": "Generic 500Hz Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_freestyle.txt",
+      "hash": "f38fc71f8e38e11e7ad70aad91407b5b0d4ac27783d8f704bae536b3d6a434da",
+      "title": "Generic 500Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_hd_freestyle.txt",
+      "hash": "5e5f05eda50249506a47be9e6ecaa6e3b48d8971131892f228107def882c6d3f",
+      "title": "Generic 500Hz HD Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_race.txt",
+      "hash": "8124d533a1cc70e168ae60d588d4be3e278580252de8eb5a0068fc24c7885947",
+      "title": "Generic 500Hz Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/500hz_ultra_cinematic.txt",
+      "hash": "4cae81e127dc9a724f4a205df70f62b3ff70108679e4ab7a841f68ce25259dd7",
+      "title": "Generic 500Hz Ultra Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "2ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_cinematic.txt",
+      "hash": "703b6bb09891ac3eaf77331a4ad7e6df3e167867e9b34e86ec346fb16057637f",
+      "title": "Generic 50Hz Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_freestyle.txt",
+      "hash": "46876dbe8b05fa40ec81b5254dcd0ded26557be65c015ac8139ed6fbe610689f",
+      "title": "Generic 50Hz Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_hd_freestyle.txt",
+      "hash": "b065a44375174a44648449bbacaf7a1c72be52f736c8850b6848ecebc002d2d2",
+      "title": "Generic 50Hz HD Freestyle",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_race.txt",
+      "hash": "a8524d053fae22aaf71502044cd6d4102146fe19f2b314da2462fbefd3a8a4a1",
+      "title": "Generic 50Hz Race",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/generic/50hz_ultra_cinematic.txt",
+      "hash": "9e52e8af0723630c2976f5befb128c9ddad381443576a57cfed511d9043ac8bb",
+      "title": "Generic 50Hz Ultra Cinematic",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "20ms",
+        "rc",
+        "rx",
+        "link",
+        "smoothing"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/long_range.txt",
+      "hash": "ef57f40dd3fbb86518a35ae0b54f9f7d15244a0dd95a7ed65f25f941210baf95",
+      "title": "IRC Ghost (Long Range)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "15Hz",
+        "Long Range",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/normal.txt",
+      "hash": "efc60f193ccbe078d359792f23b41b310fafff2ab7c255cc1117375ee9b45f21",
+      "title": "IRC Ghost (Mode: Normal)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "55Hz",
+        "Normal",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/pure_race.txt",
+      "hash": "a5d9a0c0d1f27f55dd01c0765ca8d7981a28abbda5d16392159170f75fc3b352",
+      "title": "IRC Ghost (Pure Race)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "Pure Race",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/race.txt",
+      "hash": "374560902e22ccc9811471ec581a7b803d26bb1c1cfe9e0a55cd6601045f1fd1",
+      "title": "IRC Ghost (Mode: Race)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "166Hz",
+        "Race",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/race250.txt",
+      "hash": "217bddcf5e6a7b18b0bad6ea761ebc50325076c296052a79526713874660eaf5",
+      "title": "IRC Ghost (Race250)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "Race250",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/race500.txt",
+      "hash": "b75e0082c721567219f9066458fd7a085a89f21439da3560458689c5e65e433f",
+      "title": "IRC Ghost (Race500)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "500Hz",
+        "Race500",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/ghost/solid250.txt",
+      "hash": "dc9184d567527f81102ce6d9d01352d94ad9687080a6635d253fbd15813f6903",
+      "title": "IRC Ghost (Solid250)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "Solid250",
+        "ghost",
+        "rc",
+        "rx",
+        "link",
+        "ghost",
+        "IRC",
+        "GHST",
+        "immersionRC",
+        "immersion"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/redpine/redpine_666hz.txt",
+      "hash": "e2a0d313c6d44cdc708227cb06aa6a60f7262a9c5e349b228cd12f8ca3baa186",
+      "title": "Redpine 666Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Redpine",
+        "rc",
+        "link",
+        "666Hz"
+      ],
+      "author": "ctzsnooze",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/redpine/redpine_mpm.txt",
+      "hash": "2b354e2171a5b29b8c3b6db390ad4aff45e1f62eec4822ead39818baa9d8fb01",
+      "title": "Redpine MPM",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Redpine",
+        "rc",
+        "link",
+        "666Hz"
+      ],
+      "author": "ctzsnooze",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/tbs/crossfire_150hz.txt",
+      "hash": "a6739bca811a7d264cb3014ae2f21b0bd9ee7fda54c9e061fcecddeee5af368e",
+      "title": "TBS Crossfire 150Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "150Hz",
+        "TBS",
+        "Crossfire",
+        "Team Black Sheep",
+        "CRSF",
+        "rc",
+        "rx",
+        "link"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/tbs/crossfire_50hz.txt",
+      "hash": "893652a0f3b89e3fd694158feab10e118606168c1e89edd8f6a6d6cbbbe53ffc",
+      "title": "TBS Crossfire 50Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "50Hz",
+        "TBS",
+        "Crossfire",
+        "Team Black Sheep",
+        "CRSF",
+        "rc",
+        "rx",
+        "link"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/rc_link/tbs/tracer_250hz.txt",
+      "hash": "f63d5e28423dc6b66cafdb0c350a75e2f09292f7fdb8ad6fca4f0fbe416db335",
+      "title": "TBS Tracer 250Hz",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "250Hz",
+        "TBS",
+        "Tracer",
+        "Team Black Sheep",
+        "CRSF",
+        "rc",
+        "rx",
+        "link"
+      ],
+      "author": "Ivan Efimov (Limon)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/blackbird_nextlevel.txt",
+      "hash": "53ea94140986c7e43f7b7fb92b9d0f7d342de6c6949bb75788953a11c2242dba",
+      "title": "Black Bird FPV | Next Level",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Black Bird FPV",
+        "Blackbird",
+        "Next Level",
+        "SBANG",
+        "6S",
+        "Freestyle",
+        "5 inch",
+        "5\""
+      ],
+      "author": "Black Bird FPV (Tune) / Saturn_FPV (Preset)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/defaults.txt",
+      "hash": "9dc4830c58000eab82a850b70117644dadac3b04b3fc485cb3f38fae969f049b",
+      "title": "Betaflight 2025.12 TUNE defaults",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "tune",
+        "pid",
+        "basic",
+        "default"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/2025.12/tune/karate/karate_race_2025.txt",
+      "hash": "c7e432d5a04d6ce10f2b5b3f63085a6d605484dbd0517de2e4bb9200e4ce63bd",
+      "title": "Karate Race 6s 5\" 2025.12",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "karate",
+        "6S",
+        "race",
+        "world champion",
+        "5 inch",
+        "5\"",
+        "sugarK",
+        "limon",
+        "ctzsnooze",
+        "KarateBrot",
+        "2025.12",
+        "Sh*t pilot",
+        "Viper Racing",
+        "COMPRESSOR",
+        "JWebb"
+      ],
+      "author": "sugarK",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/supafly_fpv/SupaflyFPV_Freestyle_3_4_Inch_EasyTune.txt",
+      "hash": "680e6bc30a083412d7ae36659ef7b15f642ed91702685d28241738a8c2e3a81b",
+      "title": "SupaflyFPV Freestyle 3/4 Inch",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Supafly",
+        "SupaflyFPV",
+        "4S",
+        "6S",
+        "Freestyle",
+        "3 inch",
+        "4 inch",
+        "3\"",
+        "4\""
+      ],
+      "author": "SupaflyFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/supafly_fpv/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt",
+      "hash": "4b1c87106d6a32e355f1544848f3915120096ea1a28c5a7aa172c88b0ecea051",
+      "title": "SupaflyFPV Freestyle 5 Inch",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Supafly",
+        "SupaflyFPV",
+        "4S",
+        "6S",
+        "Freestyle",
+        "5 inch",
+        "5\""
+      ],
+      "author": "SupaflyFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/supafly_fpv/SupaflyFPV_Freestyle_6_and_EasyTune.txt",
+      "hash": "4b7114d3b58f9ff966c21d63b618b2e0dc0a935ac6043884d3bab0cef496f1d9",
+      "title": "SupaflyFPV Freestyle 6 Inch",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Supafly",
+        "SupaflyFPV",
+        "4S",
+        "6S",
+        "Freestyle",
+        "6 inch",
+        "6\""
+      ],
+      "author": "SupaflyFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/supafly_fpv/SupaflyFPV_Freestyle_7_Inch_EasyTune.txt",
+      "hash": "19deb42bdfc5ce7f99b3cbd37db5b55eab0c378527f2f239aced91b5c7232e2a",
+      "title": "SupaflyFPV Freestyle 7 Inch",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "Supafly",
+        "SupaflyFPV",
+        "4S",
+        "6S",
+        "Freestyle",
+        "7 inch",
+        "7\""
+      ],
+      "author": "SupaflyFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_10in.txt",
+      "hash": "3bc72b8cff643ebac22e45253d1f6704862314beb736d0f3c850d3b2f4667c85",
+      "title": "UAV Tech - 10\" (1400-1700g | 31xx motors)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "10in",
+        "10\"",
+        "freestyle"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_5in_Freestyle_575-650.txt",
+      "hash": "4e270574724a1bcb2febdfe740e4dffc040abc26c694cff4620e96ad0f766952",
+      "title": "UAV Tech - 5\" Freestyle withOUT GoPro (575-650g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "5in",
+        "5\"",
+        "freestyle"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_5in_Freestyle_650-750.txt",
+      "hash": "d2dc006dd0008b7e7dacfcad26ab0fbd6a1b5484bf362d3833bd70f206112572",
+      "title": "UAV Tech - 5\" Freestyle with GoPro (650-750g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "5in",
+        "5\"",
+        "freestyle"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_5in_Race_500-575.txt",
+      "hash": "6773d28d8e599162915630cbea5616e64b0e79c107888a9733c1f3ab8697a278",
+      "title": "UAV Tech - 5\" Race (500-575g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "5in",
+        "5\"",
+        "race",
+        "racing"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_6-7in.txt",
+      "hash": "5aa33fa2da65fe3e0d88c74d495f458ec098a1b43f45562f0ad20ce1c5aef480",
+      "title": "UAV Tech - 6\"/7\" (750-1000g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "6in",
+        "7in",
+        "6\"",
+        "7\"",
+        "freestyle",
+        "long range"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_8-9in.txt",
+      "hash": "63150b0f9e735a78c1e96308b294978ae810d2b7b877d08e3acbfb027d1981f6",
+      "title": "UAV Tech - 8\"/9\" (1000-1400 AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "8in",
+        "9in",
+        "8\"",
+        "9\"",
+        "freestyle",
+        "long range"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Cinelifter_8-9in.txt",
+      "hash": "0e279d76f572d309b2e5cbb3b99f15922d73f65a19e7f80c9f4afa9703f80618",
+      "title": "UAV Tech - Cinelifter (8\"/9\" >2,000g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "6S",
+        "8S",
+        "8in",
+        "9in",
+        "8\"",
+        "9\"",
+        "cinelifter"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Cinelog.txt",
+      "hash": "1c6cadaa9b82726e7b9f1d06a8970be50f159f4613f4834a773c684b8bc64840",
+      "title": "UAV Tech - Cinelog (250-300g AUW)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "CineLog"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Cinewhoop.txt",
+      "hash": "d88c2510e12d6c925df856a5a29a2a656c57d3b9508aa931815b63fb66dce2bf",
+      "title": "UAV Tech - Cinewhoop",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "cinewhoop"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_GoFilm20.txt",
+      "hash": "8659b94784b6758851edabdc938d257f55445f0e273ee37608db54e38ccb06bc",
+      "title": "Caddx BNF Gofilm 20",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "Caddx",
+        "Gofilm20"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Micro.txt",
+      "hash": "e8173acbc58fc60fda7db11033def51f4455ef02b5c54664e195d7b2d7c9c7fd",
+      "title": "UAV Tech - Micro (2\" to 4\")",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "2S",
+        "3S",
+        "4S",
+        "6S",
+        "toothpick",
+        "2in",
+        "2.5in",
+        "3in",
+        "3.5in",
+        "4in"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/uav_tech/UAV_tech_Whoop.txt",
+      "hash": "e5e31af88d42834994bfce41f30d6a4b5885a0fe9ea88ced404265d2bad26d68",
+      "title": "UAV Tech - Whoop (1S & 2S)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "whoop"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/we-are-fpv/JeNo-5.1-FR.txt",
+      "hash": "4db373eaa38876f315079179e346b594e8fc1a6cadc540066611dff5cdb4900e",
+      "title": "JeNo 5.1\" (FR)",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "JeNo",
+        "6S",
+        "Freestyle",
+        "5 pouces",
+        "5\"",
+        "Cinematic",
+        "WE are FPV",
+        "WAF"
+      ],
+      "author": "Jerome @jejefpv",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/2025.12/tune/we-are-fpv/JeNo-5.1.txt",
+      "hash": "9bfad42b84c1fcb457fd3d9cccf768ee9a200920d028915b27c061c3cfcbcaf2",
+      "title": "JeNo 5.1\"",
+      "firmware_version": [
+        "2025.12"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "JeNo",
+        "6S",
+        "Freestyle",
+        "5 inch",
+        "5\"",
+        "Cinematic",
+        "WE are FPV",
+        "WAF"
+      ],
+      "author": "Jerome @jejefpv",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
     {
       "fullPath": "presets/4.3/filters/basic_no_rpm_normal.txt",
       "hash": "3ee782cf58a714d627e452ad18d345c51dcf79f169daed4585dd0665c89aca8f",
@@ -678,6 +2323,26 @@
         "GPS"
       ],
       "author": "UAV Tech (Mark Spatz)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/reset_blackbox.txt",
+      "hash": "c2791cc94bf8dcd84e5581b76074a126df6db87b8d1eb08d707b10a9801e426a",
+      "title": "Reset 4.3 Blackbox settings",
+      "firmware_version": [
+        "4.3",
+        "4.4"
+      ],
+      "category": "OTHER",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "blackbox",
+        "logging",
+        "log"
+      ],
+      "author": "Betaflight",
       "priority": 0
     },
     {
@@ -1047,12 +2712,13 @@
     },
     {
       "fullPath": "presets/4.3/rates/SugarK.txt",
-      "hash": "cbde746d04bcf903b13b9e20f3f195feba08a8a641df550c6b4ace1551b687e4",
+      "hash": "a3ee0903ea8b08cde89aee1069ccb8b6947f441480b8ed36f10fe1355c6a3324",
       "title": "Sugar k rates",
       "firmware_version": [
         "4.3",
         "4.4",
-        "4.5"
+        "4.5",
+        "2025.12"
       ],
       "category": "RATES",
       "status": "OFFICIAL",
@@ -1061,6 +2727,30 @@
         "rates",
         "MultiGP",
         "quaddiction",
+        "tyrant",
+        "sugar k"
+      ],
+      "author": "sugarK",
+      "priority": 10000
+    },
+    {
+      "fullPath": "presets/4.3/rates/SugarK_whoop.txt",
+      "hash": "3894baa10e5bb8d71351d246d2e47c85476ba974dda8e9ec7b71cbea5f841989",
+      "title": "Sugar k Whoop rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5",
+        "2025.12"
+      ],
+      "category": "RATES",
+      "status": "OFFICIAL",
+      "keywords": [
+        "racing",
+        "rates",
+        "MultiGP",
+        "quaddiction",
+        "tyrant",
         "sugar k"
       ],
       "author": "sugarK",
@@ -1176,7 +2866,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_150hz.txt",
-      "hash": "6dd1ff263d73d873e6522488bfdf9c6ee59db638c391bb855ea4c7abee09d254",
+      "hash": "184837f2b9fd127ad77396b039e8a1f5f4e0dd25ce2243ad1d71ed5ee4f83bec",
       "title": "ExpressLRS 150Hz",
       "firmware_version": [
         "4.3",
@@ -1200,7 +2890,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_250hz.txt",
-      "hash": "11feaf5c5defdf532c33babcefb569ee12fb0588eaf94afd6eadb57e0683aa24",
+      "hash": "23338d1dde96c11045e0fb112d11e71226ab4d247414fbbd736c6bbb55cf2a60",
       "title": "ExpressLRS 250Hz",
       "firmware_version": [
         "4.3",
@@ -1224,7 +2914,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_500hz.txt",
-      "hash": "49b8461f4bfe6e593ff987b35bedaac2124d9e2c3e896af50054e851cda1a1eb",
+      "hash": "1473b88ce95130f1d3d106859dde0729ea1dcca1cf4cf801e7721bff523bb98b",
       "title": "ExpressLRS 500Hz",
       "firmware_version": [
         "4.3",
@@ -1248,7 +2938,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/elrs_50hz.txt",
-      "hash": "4faff8ac9785b00aff84e9d4c4f84deedebd65f918dcc05c29034bdc1f206eba",
+      "hash": "7df044f3e2ae87dd3d54c2efbce2fa751a888d0c8becd8e515e30a4a8b6e4d14",
       "title": "ExpressLRS 50Hz",
       "firmware_version": [
         "4.3",
@@ -1273,7 +2963,7 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/frsky_sbus_fport.txt",
-      "hash": "38fa39e47349098296f9cc051dd93ab320d29fb776490e714fd94952324c3a70",
+      "hash": "73e4768eec03c13153109b62ccf923403abfb1b363415b68adcf05d8c9c49d1e",
       "title": "FrSky Sbus or FPort",
       "firmware_version": [
         "4.3",
@@ -2083,7 +3773,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/mouseFPV_AOS_35_tune_filters.txt",
-      "hash": "6873908b46d271e204c9f78acf4892ef1ec78eb6d1c4637354cafbaa8579f73f",
+      "hash": "98c482fa609edd3ccb1f00b5a5dca5a8c6b5be06633f4aaf59a843617333ba25",
       "title": "AOS 3.5 V1 4s Tune | mouseFPV",
       "firmware_version": [
         "4.3"
@@ -2102,7 +3792,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/mouseFPV_Digipick_braced.txt",
-      "hash": "dc5f0a91884f4b4d70cc0b9696f921024f2d0b21241c68dd666a2b7469447c8a",
+      "hash": "5654ac78531f98ae6c668bf53275ff205a36762a81b08f20af5bacca57c78372",
       "title": "Braced Toothpick/Digipick 3s/4s | mouseFPV",
       "firmware_version": [
         "4.3"
@@ -2125,7 +3815,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/mouseFPV_FFVCycle_Incisor_PT5_tune_filters.txt",
-      "hash": "2557231920b0c8ebd932477bb59f714beec9039d97cc50975c46dd61920b70ad",
+      "hash": "77c9d73e5ebec33b38b3ee4c3326b21be03c730db91b3e2eb852838dfaab5002",
       "title": "FPVCycle Incisor/Prototype 5 6s Tune | mouseFPV",
       "firmware_version": [
         "4.3"
@@ -2147,7 +3837,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/mouseFPV_FPVCycle_Sonicare_tune_filters.txt",
-      "hash": "46bfe57f0ce647c32042d9f7d15803324e8d7da3e1d30b1d655fd22623bb284c",
+      "hash": "27901f4dcda5b39b1d9a1fce3e9c8c5e74c65109910de0f205dd0b6a5434e1cb",
       "title": "FPVCycle Sonicare 6s Tune | mouseFPV",
       "firmware_version": [
         "4.3"
@@ -2163,7 +3853,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/mouseFPV_toothpick3_3s.txt",
-      "hash": "9a8f721f3e1334bdbba6133ee9da0c23bfa9cfd457e2e2bf49e4a52cbe4013fa",
+      "hash": "ff2c67a934c6fa74260e9de87c85469075b1edf7d1fb3c4a0fc503f04e52ceaf",
       "title": "FPVCycle Toothpick 3 3s | mouseFPV",
       "firmware_version": [
         "4.3"
@@ -2348,6 +4038,30 @@
       "priority": 1000000
     },
     {
+      "fullPath": "presets/4.3/vtx/darwinfpv_vtx_25-200-400-600.txt",
+      "hash": "7c1d97eb07fb4369efd401bce32a30a1266fb8f8277af2a38a879648133e1e44",
+      "title": "DarwinFPV 25/200/400/600mW VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "vtxtable",
+        "darwin",
+        "darwinfpv",
+        "TinyApe",
+        "CineApe"
+      ],
+      "author": "Utka v tapkah",
+      "priority": 1000000
+    },
+    {
       "fullPath": "presets/4.3/vtx/defaults.txt",
       "hash": "d8bb4a7a15e3059ecd843607204ba9d1833c989044a175fe357d94d99417abb8",
       "title": "Default 4.3 VTX settings",
@@ -2505,6 +4219,27 @@
       "priority": 1000000
     },
     {
+      "fullPath": "presets/4.3/vtx/GepRC_PRO_5.8_2.5W.txt",
+      "hash": "26840349f30cab991a8dba795c370d9fe6fdb5009be927e5ecc93c7aedef93f9",
+      "title": "GEPRC MATEN 5.8G 2.5W VTX PRO Table",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "vtxtable",
+        "geprc"
+      ],
+      "author": "Utka v tapkah",
+      "priority": 1000000
+    },
+    {
       "fullPath": "presets/4.3/vtx/GepRC_RAD_2W5.txt",
       "hash": "b1a6a50293fc783923d23ff80be2ae4b1b88c52a34e8a14daee1fbae343e944e",
       "title": "GEPRC RAD 5.8G 2.5W VTX Table",
@@ -2556,6 +4291,27 @@
       "priority": 1000000
     },
     {
+      "fullPath": "presets/4.3/vtx/JHEMCU_1W6.txt",
+      "hash": "ea840755a8651d4808e84cc8864db7f55c0808bcc2af30d11de8257b40293b9d",
+      "title": "JHEMCU RuiBet Tran-3016W VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "vtxtable",
+        "jhemcu"
+      ],
+      "author": "Utka v tapkah",
+      "priority": 1000000
+    },
+    {
       "fullPath": "presets/4.3/vtx/JHEMCU_2W5.txt",
       "hash": "be370374c3169f03695a868f7c008c969d9d7c1bdfd13333544cbf4c3fd9e54b",
       "title": "JHEMCU 5.8G 2.5W VTX Table",
@@ -2574,6 +4330,48 @@
         "jhemcu"
       ],
       "author": "Sartor",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/jhemcu_vtx20-600.txt",
+      "hash": "4aed08b7cc5f696d8a92f1406014930054b6a1d885227ebfc488533bb231666a",
+      "title": "JHEMCU VTX20-600 5.8GHZ VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "vtxtable",
+        "jhemcu"
+      ],
+      "author": "Utka v tapkah",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/JHEMCU_VTX30-800.txt",
+      "hash": "8deb1ba7f7a5243d5898baead0b1f02b48beef71e3303243395f251d2abba440",
+      "title": "JHEMCU VTX30-800 5.8GHZ 800MW VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "vtxtable",
+        "jhemcu"
+      ],
+      "author": "Utka v tapkah",
       "priority": 1000000
     },
     {
@@ -2692,6 +4490,48 @@
         "tx800"
       ],
       "author": "NemesisXB",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/speedybee_ultra.txt",
+      "hash": "26f1872af13ae005a686f2c586aaf739b34b389c2ef6c6e3f7aa541a87882cc1",
+      "title": "SpeedyBee Ultra VTX Tables",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "speedybee",
+        "tx1600",
+        "ultra"
+      ],
+      "author": "dmak",
+      "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/Tmotor_FT800.txt",
+      "hash": "75e11cc3c72e8170a68f5b14519b733e1e450914497b2f51471d5d146a683796",
+      "title": "TMotor FT800 VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "vtxtable"
+      ],
+      "author": "jawz101",
       "priority": 1000000
     },
     {
@@ -2883,6 +4723,259 @@
       "priority": 1000000
     },
     {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_3.5_filters.txt",
+      "hash": "7e6093be6d2aec003d2e8aa2d5662c2685fc89ee8ec1f31bf4b637913acc9d30",
+      "title": "AOS 3.5 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "3.5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_4_filters.txt",
+      "hash": "f7c316d49ca2c7a529e917ba844fb71cb0a80002e22d5f8289fac929186a7e36",
+      "title": "AOS 4 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "4"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_5.5_filters.txt",
+      "hash": "706a03ddc9cefb81198b5642f16f1ff0cd448429a0ac591424882d517b312e40",
+      "title": "AOS 5.5 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "5.5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_5_filters.txt",
+      "hash": "2d5b7cc9f0ec936c67cfe276f67789ffa35ae59d1bb98c46c39862b51e402535",
+      "title": "AOS 5 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_7_filters.txt",
+      "hash": "261b05b7a82bb3789aed282c5e1c82aa36b8a1b9dfd6eedc5c3d070071887bb8",
+      "title": "AOS 7 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "7"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_cine25_filters.txt",
+      "hash": "3a16c36d90b8fc6bbee0af46ad2b9b6602251bc9bb076f171ad563ab712b9f8a",
+      "title": "AOS Cine25 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "cine25"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_cine35_filters.txt",
+      "hash": "015b4ea9eeee939f3f5fd3a943e348358205d8c1beca6d5aa59927cbefee37a5",
+      "title": "AOS Cine35 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "cine35"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_cine80_filters.txt",
+      "hash": "3f28a69eac20f7c08ffb7f8b9f5d9c6d4250f59747ddd289113ba31973dbda7a",
+      "title": "AOS Cine80 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "cine80"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_lr5_filters.txt",
+      "hash": "ff22f0927d164d2e2da9af1b15fe34df77a5b449258fef5b6e067d7addc8a1ee",
+      "title": "AOS LR5 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "lr5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_t3_filters.txt",
+      "hash": "339eb22eda3e2150ee2e99f03f688edeb92c3ed72aa8da27fa6a8eefd4623090",
+      "title": "AOS T3",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "T3",
+        "3"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_ul5_filters.txt",
+      "hash": "2ef55826a5e6f09874728710bc2b71705f8990cf68dcfcf181adecd07875f8d5",
+      "title": "AOS UL5 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "ul5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.4/filters/aos_rc/aos_ul7_filters.txt",
+      "hash": "e56a37902cfc9e4f0ea2bcf6b7a68e6465e92195ce4ce38ef04f78392573ae41",
+      "title": "AOS UL7 Filters",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "ul7"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
       "fullPath": "presets/4.4/leds/quaddiction_tinytrainer.txt",
       "hash": "3446d7aa09e8a7febe459c46160efb5aadf64a44ddf022f79156b76919edef8a",
       "title": "Quaddiction TinyTrainer LED settings",
@@ -2937,6 +5030,26 @@
         "HDOSD"
       ],
       "author": "QuadMcFly (Ryan Harrell)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/osd/YarosFPV_DJI_O3_OSD.txt",
+      "hash": "80332ddac019e46fe7fe34f65ec241b453d511d58e03a57b525288ebe8a376d2",
+      "title": "Yaros FPV HD OSD",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "DJI",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "YAROSFPV"
+      ],
+      "author": "YarosFPV (Yaroslav Syubayev)",
       "priority": 0
     },
     {
@@ -3047,6 +5160,316 @@
       ],
       "author": "Betaflight",
       "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_3.5_tune.txt",
+      "hash": "8db6d6fe872b054b499c46d12239f0051a756b902e42538ffc674e0a030c781a",
+      "title": "AOS 3.5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "3.5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_4_tune.txt",
+      "hash": "e08a30d4d8450806840df2906b5360d230b9dcc8b66bbd3575663f3dbfc14db9",
+      "title": "AOS 4 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "4"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_5.5_tune.txt",
+      "hash": "0689bb5a1717f34668116cbd1c33eea79bed39743e0d3e0231085781c750db19",
+      "title": "AOS 5.5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "5.5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_5_tune.txt",
+      "hash": "95233e78da485b05393377b7b6a49422942c6cbfc8d0d83408015a015275abf5",
+      "title": "AOS 5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_7_tune.txt",
+      "hash": "c1da19f8dbde0103c4c15d6288413d95f94dc3077b7bdcab7f1b7376c4f79774",
+      "title": "AOS 7 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "7"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_cine25_tune.txt",
+      "hash": "8f2595dca2b529f9e1162605fad26be5c80285544eccf3ca52abe2b0a3554154",
+      "title": "AOS Cine25 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "cine25"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_cine35_tune.txt",
+      "hash": "554e9c62338e8beffa233cbf6894148c447099cd976c3ff201940033b18b9087",
+      "title": "AOS Cine35 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "cine35"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_cine80_tune.txt",
+      "hash": "9cc7b272736578ecff5d61abb750516581e7e4ff45165e74845b9e6755867ad6",
+      "title": "AOS Cine80 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "cine80"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_lr5_tune.txt",
+      "hash": "914db2785815cef5c66d0255a1ab889a369cb2bc23213f9613b6e9eff38910c2",
+      "title": "AOS LR5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "lr5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_t3_tune.txt",
+      "hash": "b1e1b96df67df9e93e68f86bf6eb79c8c6595f84d6ed8a4c529124080d566058",
+      "title": "AOS T3 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "T3",
+        "3"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_ul5_tune.txt",
+      "hash": "70779c284c9dd996a26e2cd8da4b00037fe349e850696e8686156a61b0170ccc",
+      "title": "AOS UL5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "ul5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/aos_rc/aos_ul7_tune.txt",
+      "hash": "0cdd5ad26b54a4347670a87beb54ee413b8d9e75906597895e32bf35a1d524fd",
+      "title": "AOS UL7 tune by Chris Rosser",
+      "firmware_version": [
+        "4.4",
+        "4.3"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "ul7"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/barracuda_race_tune.txt",
+      "hash": "64941466525dab42ad27fd0b3512c8a39e82a44fd1edcbf71faf80ce76b5d03f",
+      "title": "Barracuda Racer Tune",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "6S",
+        "race",
+        "racing",
+        "beginner",
+        "5 inch",
+        "5\"",
+        "viki",
+        "2024"
+      ],
+      "author": "Viki Baarathi",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/ctzsnooze_5in_4S_race.txt",
+      "hash": "403082de2d7eb599cc9969503decd62623bb979d7fc2b097822dd5908d3f7dce",
+      "title": "4S, 3\" to 5\" race tune by ctzsznooze",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "3in",
+        "4in",
+        "5in",
+        "twig",
+        "4S",
+        "race",
+        "tune",
+        "ctzsnooze"
+      ],
+      "author": "ctzsnooze",
+      "force_options_review": true,
+      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.4/tune/defaults.txt",
@@ -3233,7 +5656,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mouse_fpv/mouseFPV_AOS_35_tune_filters.txt",
-      "hash": "be7d760872b99568192cba01c8e0175c59a50d74f8d82a98fc975398974633fd",
+      "hash": "523efbe8e834314200d8b0faa1c61a5c4a71e787d11e2af096366eda73a46d1c",
       "title": "AOS 3.5 V1 4s Tune | mouseFPV",
       "firmware_version": [
         "4.4"
@@ -3252,7 +5675,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mouse_fpv/mouseFPV_Digipick_braced.txt",
-      "hash": "293fc19e8651996f0d1d3c0c26f8622828ada206211d9c2f18f0b136f1f1bdc8",
+      "hash": "ce6f2aa399848b87d73f53c22c9c3d36940df3d115a97322d20d5eb3332b2e3e",
       "title": "Braced Toothpick/Digipick 3s/4s | mouseFPV",
       "firmware_version": [
         "4.4"
@@ -3275,7 +5698,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mouse_fpv/mouseFPV_FFVCycle_Incisor_PT5_tune_filters.txt",
-      "hash": "5b334a9e4495c522069414c1bf7d91c9b996dac25ecd750ec6b2d839d6e0bed4",
+      "hash": "c12813d5cf556cce5f67e579101f5704fbbb137e837ddd7e9ec6c61e8f69cc78",
       "title": "FPVCycle Incisor/Prototype 5 6s Tune | mouseFPV",
       "firmware_version": [
         "4.4"
@@ -3297,7 +5720,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mouse_fpv/mouseFPV_FPVCycle_Sonicare_tune_filters.txt",
-      "hash": "5efcc6c3efd67f2a94383d9d73ef34498daa3cc779e9ad2e0fbba75751a257bb",
+      "hash": "fb58d45585a416558f6a6d9f8396c8971871f765ec2f335f9064f501f6ddba97",
       "title": "FPVCycle Sonicare 6s Tune | mouseFPV",
       "firmware_version": [
         "4.4"
@@ -3313,7 +5736,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mouse_fpv/mouseFPV_ImpuseRC_Apex_tune.txt",
-      "hash": "aacea6dd698c1a77ccbe4057e73d6d4391b2444ca08346b11717ca944ebab886",
+      "hash": "fbc719d510e591242db17dcb8d460cfa7c51a53ad2d2bdf22fefedbc2b97536a",
       "title": "ImpulseRC Apex 5\" | mouseFPV",
       "firmware_version": [
         "4.4"
@@ -3333,7 +5756,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/mouse_fpv/mouseFPV_toothpick3_3s.txt",
-      "hash": "a60e270590017ffb0c66737809e6a4b00516c59f83c454f10f08a6179a24980b",
+      "hash": "ffe39ea1a0d57d8b8492c11eb302de88946ddd9534519442606129c116c6440d",
       "title": "FPVCycle Toothpick 3 3s | mouseFPV",
       "firmware_version": [
         "4.4"
@@ -3453,7 +5876,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_10in.txt",
-      "hash": "998391d74d9899d369ee4d42afb887a2ca25f95124f5d328ee3d329930d05db1",
+      "hash": "42fb8a1a48116493b9db9c87a11ce492d7d6e145da5b38618739fffde6ad7fee",
       "title": "UAV Tech - 10\" (1400-1700g | 31xx motors)",
       "firmware_version": [
         "4.4"
@@ -3472,7 +5895,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_5in_Freestyle_575-650.txt",
-      "hash": "66290a90ba4102b8f19f2d7acc67e881249361a76d01e63efa26e2bab4a1d4ac",
+      "hash": "d82ce3710a4a7e18a079b5c299ae0f726022ed474360835ccb50a157b7928a76",
       "title": "UAV Tech - 5\" Freestyle withOUT GoPro (575-650g AUW)",
       "firmware_version": [
         "4.4"
@@ -3491,7 +5914,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_5in_Freestyle_650-750.txt",
-      "hash": "363489439f0ee0aae3f26572aa04b41d450288c21c32b819a86a382d844dbd7a",
+      "hash": "d45c20af38d753a05ed4907000c5e1440eb47a7e708f09913e0b56fba9cc95ec",
       "title": "UAV Tech - 5\" Freestyle with GoPro (650-750g AUW)",
       "firmware_version": [
         "4.4"
@@ -3510,7 +5933,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_5in_Race_500-575.txt",
-      "hash": "2c134b3680afc5b830a57d12ad34684a0480c441026f18d99b56da660fb77aba",
+      "hash": "a3b7080a617236f505f1a2e24623d03bb89ddf92b77134a5f54908c3f90d9cee",
       "title": "UAV Tech - 5\" Race (500-550g AUW)",
       "firmware_version": [
         "4.4"
@@ -3530,7 +5953,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_6-7in.txt",
-      "hash": "7723f5850f8b269149ad3343b3a6ece9da61c9c2cfd47bc356b8115e1ae6e1b3",
+      "hash": "405a20732084d1741ca4fc9bc6a16052c0d305adacace76c5183f0b924ecbf3d",
       "title": "UAV Tech - 6\"/7\" (750-1000g AUW)",
       "firmware_version": [
         "4.4"
@@ -3552,7 +5975,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_8-9in.txt",
-      "hash": "95877b4e70895bb961825e12719110d0a395a7be0c70f183c72e92897312a69f",
+      "hash": "370984642bb57640430343b4f2acf8e44f9c4ffecacfd1ee2fd0a90184ffabe1",
       "title": "UAV Tech - 8\"/9\" (1000-1400 AUW)",
       "firmware_version": [
         "4.4"
@@ -3574,7 +5997,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_Cinelifter_8-9in.txt",
-      "hash": "81b4a8b54b8d22de858141249efc4708d8f6809d87bb8aee5bc89a16267a64e4",
+      "hash": "8e11c5c46c0326cce00f7a2849d02259768d56702d41cfaf4bc9a1d0e0615735",
       "title": "UAV Tech - Cinelifter (8\"/9\" >2,000g AUW)",
       "firmware_version": [
         "4.4"
@@ -3595,7 +6018,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_Cinelog.txt",
-      "hash": "4407e24643237f277fd88f131c800021c54c3a331942aba580ad21160f8d7595",
+      "hash": "6c70a129a048a0b1479cfaf5fb226483b45bc5b84010d7adf47d4dbb6a0bbbaa",
       "title": "UAV Tech - Cinelog (250-300g AUW)",
       "firmware_version": [
         "4.4"
@@ -3610,7 +6033,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_Cinewhoop.txt",
-      "hash": "331dbddbe4321602b6991809d53ff97c59596ab8f5252987bb0f1d737c581bf8",
+      "hash": "2344326dd5e8656ebc4a42c3e861d3e81cfa94e5557b0db6c8f541370acfbc22",
       "title": "UAV Tech - Cinewhoop",
       "firmware_version": [
         "4.4"
@@ -3624,8 +6047,25 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_GoFilm20.txt",
+      "hash": "002e1c5179fc06631ed3cd0cde8e261df5afe965d76a0ab0ccc9a82b6227313c",
+      "title": "Caddx BNF Gofilm 20",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Caddx",
+        "Gofilm20"
+      ],
+      "author": "UAV Tech (Mark Spatz)",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_Micro.txt",
-      "hash": "3caa4114636929b8e8f93cddb7a4e314d8d577c97b298a1c4df31ce88312a0f1",
+      "hash": "79c33ddc091e58c4e85df427b7f5d09ac1509ddcfa3a638e60aeb809e776fe73",
       "title": "UAV Tech - Micro (2\" to 4\")",
       "firmware_version": [
         "4.4"
@@ -3649,7 +6089,7 @@
     },
     {
       "fullPath": "presets/4.4/tune/uav_tech/UAV_tech_Whoop.txt",
-      "hash": "ef45324a0f1f7dad98ffaf77bec1828bee741e55b087b515638f68373f96a158",
+      "hash": "b5ce8e085f91164f400dcdbb2e6811d271437095633bfcd0346e2cbabc38d323",
       "title": "UAV Tech - Whoop (1S & 2S)",
       "firmware_version": [
         "4.4"
@@ -3757,11 +6197,12 @@
     },
     {
       "fullPath": "presets/4.4/vtx/DJI_FPV-WTF_MSP-OSD.txt",
-      "hash": "3a32624a215bafee95f4581bea961dbdc7eac45f8c71e687c1c4ab45d0c2fbca",
-      "title": "OSD for Fpv.wtf, DJI O3, Avatar HD",
+      "hash": "d05545df4f821e10d4d0d95f22d96ca26105098464410864fcc48b7e8135e729",
+      "title": "OSD for Fpv.wtf, DJI O3 & O4, Avatar HD",
       "firmware_version": [
         "4.4",
-        "4.5"
+        "4.5",
+        "2025.12"
       ],
       "category": "VTX",
       "status": "COMMUNITY",
@@ -3769,8 +6210,7 @@
         "vtx",
         "dji",
         "O3 air unit",
-        "O3",
-        "03",
+        "O3 & O4",
         "avatar",
         "walksnail",
         "HD",
@@ -3814,6 +6254,430 @@
       "author": "sugarK",
       "force_options_review": true,
       "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.5/bnf/betafpv_air75.txt",
+      "hash": "8b97e2a35503478d141d5707f3de6baddceff463f1eede4bd3caa3fd51c56075",
+      "title": "BetaFPV Air75 Factory Defaults",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "bnf",
+        "diff",
+        "betafpv",
+        "air75"
+      ],
+      "author": "YarosFPV (Yaroslav Syubayev)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/GEPRC_Cinelog30V3.txt",
+      "hash": "d440ec7f974b0819df5a18b13e829767f3761d08cecaf364ccf4c7b751786fbd",
+      "title": "GEPRC Cinelog30V3 HD O4",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "OFFICIAL",
+      "keywords": [
+        "GEPRC",
+        "Cinelog30V3HD",
+        "Cinelog30V3WTF"
+      ],
+      "author": "Grey pang",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_3.5_filters.txt",
+      "hash": "207b31c1473442c3585da774337eb8b7417d5300fc2229750561b998ac503040",
+      "title": "AOS 3.5 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "3.5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_4_filters.txt",
+      "hash": "62a0de08898745a6cf5eda062c878f2d5d7a42024f2d5bde1b0b4b73f91fe176",
+      "title": "AOS 4 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "4"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_5.5_filters.txt",
+      "hash": "ee5ce1221991daad5ee8a79450cca13a21c6ac5d636284ccc63189b3d600d53d",
+      "title": "AOS 5.5 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "5.5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_5_filters.txt",
+      "hash": "7aea9aeb8ff85685232517a0a60f98a522a3423df23f5127e969e7c8daa77c5e",
+      "title": "AOS 5 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_65mm_filters.txt",
+      "hash": "cd5c63321d2433fc49227fc31dae6b6c564ad2b5e4471897ae81803fc0e1e349",
+      "title": "AOS 65mm Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "65mm",
+        "tiny",
+        "whoop"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_7_filters.txt",
+      "hash": "9dac53366b54ecfd62949cc403aeb887ad2952c52d01f9ff98a902136e152940",
+      "title": "AOS 7 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "7"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_cine20_filters.txt",
+      "hash": "0b85d206dc4e6e4f6374e8ceb72991be9b15f7539c0533e8965997e5c93bcb22",
+      "title": "AOS Cine20 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "cine",
+        "20"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_cine25_filters.txt",
+      "hash": "5dfe15d044efe1f076db145463a3ad7da6320b0f2d2de941b38d9eeceab3655c",
+      "title": "AOS Cine25 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "cine",
+        "25"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_cine30_filters.txt",
+      "hash": "a865ba39ba9c6adc5a1ce4fcb428632e01adc9074841a87dea55da88741f95f9",
+      "title": "AOS Cine30 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "cine",
+        "30"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_cine35_filters.txt",
+      "hash": "88350d20547e7485172ff9ee4a162130a986a5f7abff8cc6d3ef908b41ac292c",
+      "title": "AOS Cine35 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "cine",
+        "35"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_cine40_filters.txt",
+      "hash": "c0efc3ecf653467bc45dac69f51363ff037fb17b4faf2bbe9bbc33d1a190021e",
+      "title": "AOS Cine40 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "cine",
+        "40"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_cine80_filters.txt",
+      "hash": "41098bb761af0151f32fd06e34d0da16f3a3f53865ef3ae5edc196f017eefc8f",
+      "title": "AOS Cine80 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "cine80"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_hs5_filters.txt",
+      "hash": "0762d1d723438b57cfe40e67c471497d76157093689edb41884497fb03536edc",
+      "title": "AOS HS5 200mph Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "HS5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_lr5_filters.txt",
+      "hash": "8afe16726d007325771fe8bc5b2d14fb205f1fa2efd7e072c98600a1b38b15f0",
+      "title": "AOS LR5 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "lr5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_t3_filters.txt",
+      "hash": "7d4ce64b7a64141ea9de61c6bfe642352b96de7187961d8148fa7c830f9126bf",
+      "title": "AOS T3 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "T3",
+        "3"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_ul10_filters.txt",
+      "hash": "d08019479b0a15c66c45383a827104e54e934310054bd30ce049c2ede6167ebd",
+      "title": "AOS UL10 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "ul10"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_ul5_filters.txt",
+      "hash": "4248ae596b9df2b204ffc60a596baf3b62dc61ab9c1b1b5cf71f35d5d8ca1dc1",
+      "title": "AOS UL5 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "ul5"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_ul7_filters.txt",
+      "hash": "50586d06319ab09d1b6c6d183bd42f77c77e597f628bb1e674eaeb82be86e81c",
+      "title": "AOS UL7 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "ul7"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/filters/aos_rc/aos_ul8_filters.txt",
+      "hash": "38cbc253ebea2676f213b1d4b22466b676414b2a2f0416e7caa455b7de1bdf01",
+      "title": "AOS UL8 Filters",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "COMMUNITY",
+      "keywords": [
+        "filter",
+        "filters",
+        "aos",
+        "chris",
+        "rosser",
+        "ul8"
+      ],
+      "author": "Chris Rosser",
+      "priority": 100
     },
     {
       "fullPath": "presets/4.5/filters/basic_no_rpm_clean.txt",
@@ -4094,6 +6958,28 @@
       "priority": 100
     },
     {
+      "fullPath": "presets/4.5/filters/rubberquads/squirrel_35_filter.txt",
+      "hash": "9bbacfda02444a96d211dfa9168b7615ff49bdd1fd79ef0d6dde4a5c041a27f9",
+      "title": "4.5 Filter settings for the RubberQuads Squirrel 35 (with RPM FILTERING).",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "FILTERS",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "rubberquads",
+        "squirrel",
+        "DShot telemetry",
+        "filter",
+        "filters",
+        "clean",
+        "basic",
+        "betaflight"
+      ],
+      "author": "Volker Göschl-Covrljan",
+      "priority": 100
+    },
+    {
       "fullPath": "presets/4.5/leds/LED VTX  race mode.txt",
       "hash": "9f7ff587ab9bb60c8902dfdd14a4b3477cf3d3605a3eccdc771ed8bfd4a1ebee",
       "title": "RACE mode LED settings",
@@ -4139,6 +7025,70 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/osd/bensonk.txt",
+      "hash": "02af0529b806847b1128711bde753009000a659508ef23613ee7399b29685e98",
+      "title": "bensonk standard OSD config",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "OSD",
+        "TBS",
+        "TBS Core",
+        "GPS",
+        "navigation",
+        "longrange",
+        "mountain surfing",
+        "MtnSurf"
+      ],
+      "author": "bensonk",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/osd/JazzMutant_HDZero_osd.txt",
+      "hash": "a31f1b77f1506cb07a923d7f86a268c98de71574453ac3f4ca6ba11cd7637c0b",
+      "title": "JazzMutant HDZero OSD",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "OSD",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "HDZERO",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "JazzMutant",
+        "Racing"
+      ],
+      "author": "JazzMutant",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/osd/sugark_hdzero_osd.txt",
+      "hash": "d3f43e0baad7d2b2331b71b76029b2576f0f73520ac72060f4ec281153a1e8fa",
+      "title": "sugarK HDzero OSD",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "hdzero",
+        "HD",
+        "HDOSD",
+        "OSD",
+        "sugarK",
+        "racing"
+      ],
+      "author": "sugarK",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/100-euro-fpv-tune.txt",
       "hash": "3f0256b75809d56d7ec528481ed302ac1d756c9c08bee71b41e213849924b953",
       "title": "100-EURO-FPV",
@@ -4162,6 +7112,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/other/bensonk-switches.txt",
+      "hash": "ca0d77d0054512da7ca4551de98098612c3a7b1d4307156b018b03807f03ebf3",
+      "title": "bensonk - Standard switch settings",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "switch",
+        "mode",
+        "modes"
+      ],
+      "author": "bensonk",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/other/custom_nmea.txt",
       "hash": "10931aba011ca232171d37cdacdc287d5f261a8de12bb2f75bb9eef3f9c7b3bc",
       "title": "Custom NMEA commands",
@@ -4176,6 +7143,47 @@
         "nmea"
       ],
       "author": "KMfpv",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/multigp_pro_spec.txt",
+      "hash": "a340e77d4555317ce3c14ecda94583abdf6b074a176a09cd9abfd24e7d0287e2",
+      "title": "MultiGP PRO Spec 7\"",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "6S",
+        "race",
+        "7 inch",
+        "7\"",
+        "Shames",
+        "MGP",
+        "Sharjah",
+        "multigp"
+      ],
+      "author": "Armando Gallegos (Mondo)",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/other/reset_3d.txt",
+      "hash": "457090460225ee84ddb27a46e74530078f00741067dcf51fb5f3cec443b29d31",
+      "title": "Reset 3D settings to 4.5 default settings",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "OTHER",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "3d",
+        "upside down"
+      ],
+      "author": "Betaflight",
       "priority": 0
     },
     {
@@ -4227,6 +7235,74 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/other/zoefpv.txt",
+      "hash": "78e6a4d9c57554d080044f446552ed5ab60fe28dfe4167099fcb2f1df1e66555",
+      "title": "ZoeFPV 3d tuneup",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "rates",
+        "freestyle",
+        "juicy",
+        "sbang",
+        "zoeFPV",
+        "zoe",
+        "3d",
+        "upside down",
+        "sugarK",
+        "sliders"
+      ],
+      "author": "ZoeFPV",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/rates/AOS_rates.txt",
+      "hash": "bcbe2997c5c9d9b648cf4bac0ff7f5abe360c5dbbe1da607a567912398587219",
+      "title": "AOS Rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "COMMUNITY",
+      "keywords": [
+        "youtube",
+        "aos",
+        "freestyle",
+        "cinematic",
+        "chris",
+        "rosser"
+      ],
+      "author": "Chris Rosser",
+      "priority": 10000
+    },
+    {
+      "fullPath": "presets/4.5/rates/rubberquads_team_rates.txt",
+      "hash": "489a7807b2c3b2e5c5a8f037cb8c45e515df0cdc4ea09a0f586169672570574f",
+      "title": "RubberQuads Team Rates",
+      "firmware_version": [
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "RATES",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "rates",
+        "freestyle",
+        "race",
+        "der_V",
+        "settek",
+        "rubberquads"
+      ],
+      "author": "Volker Göschl-Covrljan",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/4.5/rates/ZoeFPV_3D_rates.txt",
       "hash": "0e6a717400f59ff9e6e94f7738235b75d5158d1171ea53556ac114d76f63c3f3",
       "title": "ZoeFPV 3D Rate Bomb",
@@ -4252,8 +7328,523 @@
       "priority": 10000
     },
     {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_3.5_tune.txt",
+      "hash": "41bf642ddcb7498324d14f403967b69eddaa5927485554842071256df6a268b1",
+      "title": "AOS 3.5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "3.5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_4_tune.txt",
+      "hash": "762eb0617876b6cec2c181d4ccffe1186a6c87ab59e32f2dbe4338e1bf5bc1e8",
+      "title": "AOS 4 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "4"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_5.5_tune.txt",
+      "hash": "6e947f8d3954f32b21b01eaf17829617a444c1ccc316694cadae0e90444368b2",
+      "title": "AOS 5.5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "5.5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_5_tune.txt",
+      "hash": "7df36ec398f75dbff65c556a5f3f9af39ca0f67e21901eba7e457d927ebe2506",
+      "title": "AOS 5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_65mm_tune.txt",
+      "hash": "3b5ed4fda577ab4e83adf0e82d2e6ca7c4499b087b40597d768f3ee1dc6ebb94",
+      "title": "65mm Tiny whoop tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "65mm",
+        "tiny",
+        "whoop"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_7_tune.txt",
+      "hash": "ddb49289ed6cbfb12219d2bd27c0a634c3904b89fb6ee3ad0968771f7791c05a",
+      "title": "AOS 7 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "7"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_cine20_tune.txt",
+      "hash": "bcd67bb6a0adf1cebf162ec8453329df5f753491ccf84f60de1a75a0296fbc92",
+      "title": "AOS Cine20 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "cine",
+        "20"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_cine25_tune.txt",
+      "hash": "da99c6bc848619fb2b7385d03d441bf106072ecea1897e2e31d1ceff33486e88",
+      "title": "AOS Cine25 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "cine",
+        "25"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_cine30_tune.txt",
+      "hash": "75425f8e770688a1be5a5f1f925ed899c363e060c2c8add348b9d9b51d5281ce",
+      "title": "AOS Cine30 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "cine",
+        "30"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_cine35_tune.txt",
+      "hash": "7e721a41341cefb8192ec93df8aeb32f92e77bda930818c9456a7f004f587a0b",
+      "title": "AOS Cine35 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "cine35"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_cine40_tune.txt",
+      "hash": "c8940d178348526b22cc5a1a40ca4a2ce377f923efd81ec16b7209aaf0d73c54",
+      "title": "AOS Cine40 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "cine",
+        "40"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_cine80_tune.txt",
+      "hash": "5931aa123c704067764b82573a5d30e07992c9929265807e966c7701bc82bde9",
+      "title": "AOS Cine80 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "cine80"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_hdzero_aio5_65mm.txt",
+      "hash": "3ab74a37f2f55329df2fc095166712ec47755dc4f6ba78592db40164881e1c75",
+      "title": "HDZERO AIO5 65mm Whoop tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "65mm",
+        "tiny",
+        "whoop",
+        "hdzero",
+        "aio",
+        "aio5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_hs5_tune.txt",
+      "hash": "a8a1ef51a17446c91e6940fd306042c6401b1ebee4a3157627fbec14a0a9842a",
+      "title": "AOS HS5 200mph tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "HS5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_lr5_tune.txt",
+      "hash": "d47f50f1981194ced80ace771152d57c2f34a2848f71da067d8f7e7f7bdbd065",
+      "title": "AOS LR5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "lr5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_t3_tune.txt",
+      "hash": "ba22231acb9a9a42c21c454bc0cd4d455d786a995a9d7f8647736615abd8b531",
+      "title": "AOS T3 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "T3",
+        "3"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_ul10_tune.txt",
+      "hash": "415dae4e2d6d5298d60891d8d120ef3cda7b631124b7ad44354c25f4b74f2a84",
+      "title": "AOS UL10 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "ul10"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_ul5_tune.txt",
+      "hash": "e760a4049d390838f91aa9b80d783a0c898b53d7d1bbe27616b202fe1d7fe856",
+      "title": "AOS UL5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "ul5"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_ul7_tune.txt",
+      "hash": "412a5933967c221e6a08956a647512239e6a09b0fec49bb5cdeac87e6af4d316",
+      "title": "AOS UL7 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "ul7"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/aos_rc/aos_ul8_tune.txt",
+      "hash": "14bcaa0535c360393c56d5d628304e669982ee3f322b9648e2cd244f9c63ae28",
+      "title": "AOS UL8 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "chris",
+        "rosser",
+        "pid",
+        "tune",
+        "ul8"
+      ],
+      "author": "Chris Rosser",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/barracuda_race_tune.txt",
+      "hash": "5ed4b6efc4a2642990b39d25a66c30acb3a91c6a0c0661436b29d63af13da2a6",
+      "title": "Barracuda Racer Tune",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "6S",
+        "race",
+        "racing",
+        "beginner",
+        "5 inch",
+        "5\"",
+        "viki",
+        "2024"
+      ],
+      "author": "Viki Baarathi",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/basher_jazzmutant_tune.txt",
+      "hash": "e6ac203f6f1550aca430e94ce1edf558ce158155b3474b097f0f47beee3b9e6e",
+      "title": "Basher 5\" 6S by JazzMutant",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "basher",
+        "freestyle",
+        "5 Inch",
+        "5 In",
+        "5\"",
+        "recopter",
+        "bando",
+        "JazzMutant"
+      ],
+      "author": "JazzMutant",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/blackbird_nextlevel.txt",
+      "hash": "535f82084a08b912c745e7221abce8f5f6f237527b034bcca495a20fc49328ac",
+      "title": "Black Bird FPV | Next Level",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Black Bird FPV",
+        "Blackbird",
+        "Next Level",
+        "SBANG",
+        "6S",
+        "Freestyle",
+        "5 inch",
+        "5\""
+      ],
+      "author": "Black Bird FPV (Tune) / Saturn_FPV (Preset)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/caddx/CADDX_Protos.txt",
+      "hash": "1d52392fcd6f0cb4dd4bcf3d4c71a95ed7ca084184041c59f123abdd8ec08435",
+      "title": "CADDX Protos – Factory Performance Tune",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "CADDX",
+        "Protos"
+      ],
+      "author": "CADDXFPV",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.5/tune/ctzsnooze_5in_4S_race.txt",
-      "hash": "5d7adcb4a2fa4189cdee6f515988d1b83cbcea8568e91e8625ceeaf6b091996d",
+      "hash": "a82f335825d3b887072e6d502c2ae4f2361fa8e88874f59086d2ca8289691e8c",
       "title": "4S, 3\" to 5\" race tune by ctzsznooze",
       "firmware_version": [
         "4.5"
@@ -4276,7 +7867,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/defaults.txt",
-      "hash": "153b4882f95d865290627ef6fd5e2e12fa446d9244d222e770252da70e33a470",
+      "hash": "40d749b64f98141dea03e11b77976f0907a7e3b912c2e52c7395715eb570dfdd",
       "title": "Betaflight 4.5 TUNE defaults",
       "firmware_version": [
         "4.5"
@@ -4363,7 +7954,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/karate/karate_brushless_whoop.txt",
-      "hash": "bc815c1e9ac388e3c0a223f27a8ea049ec698e4ebabf6f37d44706412d1903e3",
+      "hash": "0005a5b1bc8b794875d9c58f6ae8580edd7e36464f7d8b9648a34ec3bba844a3",
       "title": "Karate brushless whoop",
       "firmware_version": [
         "4.5"
@@ -4409,7 +8000,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/karate/karate_race.txt",
-      "hash": "53ba4c93688527d2e7b241b7310c016208bbed903bb6588b644ae8629e39f902",
+      "hash": "647a69f96466ad63b19ab2f5156bf5272912306291edd725722b1ac85cac1721",
       "title": "Karate Race 6s 5\"",
       "firmware_version": [
         "4.5"
@@ -4433,7 +8024,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/karate/karate_race_lite.txt",
-      "hash": "9da7dbdb7f1476d69210f91d3e83f1b46ef7b86d3ff194ddb9102026a3a71db0",
+      "hash": "d0b831c447d553279dbd29dab6dedb14b4af5acde7e1db2f37cd7578cc6bb0a5",
       "title": "Karate 'Viper Lite' Race  5\"",
       "firmware_version": [
         "4.5"
@@ -4452,7 +8043,10 @@
         "ultralite",
         "viper",
         "viper lite",
-        "sliders"
+        "bezerkrc",
+        "neuron",
+        "nano",
+        "2024 sliders"
       ],
       "author": "sugarK",
       "priority": 1000000000000
@@ -4481,8 +8075,30 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/tune/karate/karate_whoop_late_2024.txt",
+      "hash": "6b64d36ecb7111657f504d13ff8e6e0118f5a2df2c90d6fb79bda9256d30871b",
+      "title": "Karate RACE Whoop late2024",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "karate",
+        "1S",
+        "race",
+        "brushless",
+        "whoop",
+        "65mm",
+        "sugarK",
+        "KarateBrot"
+      ],
+      "author": "sugarK",
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.5/tune/karate/tiny_karate.txt",
-      "hash": "d77f4b9cde7d9cca8d7a1725517c3c9d1862b0b306de183849d1726a35a377c3",
+      "hash": "24a032d6d4fcb95ff76ec21a15209f7353070701a4ea343bdea832c32b6172d0",
       "title": "533 TinyTrainer “spec” Karate",
       "firmware_version": [
         "4.5"
@@ -4531,7 +8147,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/mouse_fpv/mouseFPV_AOS_35_tune_filters.txt",
-      "hash": "79cb33fb5584c905fbeeb225019487566f8f57fe880ea7d55a4decbb01d24183",
+      "hash": "f0b36d28ba5c1d7d7950615040ff6cd88b61b05cbdb11d03f4cf7118c2f2f03a",
       "title": "AOS 3.5 V1 4s Tune | mouseFPV",
       "firmware_version": [
         "4.5"
@@ -4550,7 +8166,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/mouse_fpv/mouseFPV_Digipick_braced.txt",
-      "hash": "18d9cbc28e9b505273d9d141e27721b2ddfb9a7d0092c8ab854885b249666f11",
+      "hash": "c1c635ace684c3ae59de8f651a598140b6f0f6acaadaf986c6ec4d1a6cd94ab1",
       "title": "Braced Toothpick/Digipick 3s/4s | mouseFPV",
       "firmware_version": [
         "4.5"
@@ -4573,7 +8189,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/mouse_fpv/mouseFPV_FFVCycle_Incisor_PT5_tune_filters.txt",
-      "hash": "d6fdca2aa21d2644a6454a5d487c74a69ce9ff246d6be7103f794ce2779cdc8e",
+      "hash": "7eab4845a86015a8a6944b9c3f2c447d437a4b075bd5bea1f6f0ec8ab3a5567f",
       "title": "FPVCycle Incisor/Prototype 5 6s Tune | mouseFPV",
       "firmware_version": [
         "4.5"
@@ -4595,7 +8211,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/mouse_fpv/mouseFPV_FPVCycle_Sonicare_tune_filters.txt",
-      "hash": "c4f14827e7f2faf7e73ebb153f143918dd4086ef4fbc9ea43f2bac61d8459581",
+      "hash": "470916ef5a3ef46f10fb9c10c398d1678fffd114a86514d5c1fe9e93170619e9",
       "title": "FPVCycle Sonicare 6s Tune | mouseFPV",
       "firmware_version": [
         "4.5"
@@ -4611,7 +8227,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/mouse_fpv/mouseFPV_ImpuseRC_Apex_tune.txt",
-      "hash": "fce473833e7f5dc187351ac446a3dadaa942bca0ae5090ba294460ddada0e19d",
+      "hash": "befd887bb2d2b55fdf8835e208992e3fa5ed9b3a24be88136fb02230a9c35412",
       "title": "ImpulseRC Apex 5\" | mouseFPV",
       "firmware_version": [
         "4.5"
@@ -4631,7 +8247,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/mouse_fpv/mouseFPV_toothpick3_3s.txt",
-      "hash": "576d9bea5f1620f157021d6f5616f9db4c8eff95279bdac29d0dc8e476bb14e7",
+      "hash": "dd099fe8320b771bad06b0596ace5c8223afa636f1e22d8de386f43965d2bdb4",
       "title": "FPVCycle Toothpick 3 3s | mouseFPV",
       "firmware_version": [
         "4.5"
@@ -4645,6 +8261,50 @@
         "3 inch"
       ],
       "author": "mouseFPV",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/openracer_jazzmutant_tune.txt",
+      "hash": "d31fe15da3d1c5a3fefedfc9374d34777d22a2c1c6a59cb1208b1cded2254e9a",
+      "title": "OpenRacer 5\" 6S by JazzMutant",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "openracer",
+        "race",
+        "5 Inch",
+        "5 In",
+        "5\"",
+        "JazzMutant"
+      ],
+      "author": "JazzMutant",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/ozr_5x.txt",
+      "hash": "8749cb9d45d340232d583373f3bb84280e560908bef234b2261f3bed3d5a0657",
+      "title": "DinDrones OZR-5X",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "ozr",
+        "dindrones",
+        "6s",
+        "5 inch",
+        "5\"",
+        "racing",
+        "5in",
+        "din"
+      ],
+      "author": "Benjamin Freelove",
       "force_options_review": true,
       "priority": 1000000000000
     },
@@ -4665,6 +8325,25 @@
         "freestyle"
       ],
       "author": "QuadMcFly (Ryan Harrell)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/rubberquads/squirrel35_tune.txt",
+      "hash": "79fa0d962962068a6a5f7e34de79097f6cc476b7da4e6051bc064c49021e71dc",
+      "title": "Squirrel 3.5 tune",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "rubberquads",
+        "squirrel",
+        "3.5",
+        "pid",
+        "tune"
+      ],
+      "author": "Volker Göschl-Covrljan",
       "priority": 1000000000000
     },
     {
@@ -4690,7 +8369,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_3_4_Inch_EasyTune.txt",
-      "hash": "a74e9b3e4d95ea46153973ab9ebff69804b9ec57a763ba7159be20b501cef229",
+      "hash": "7ee8fc688783b55465fa4e42051202a9c795f8a84800b5902a40e96f9890284e",
       "title": "SupaflyFPV Freestyle 3/4 Inch",
       "firmware_version": [
         "4.5"
@@ -4702,6 +8381,7 @@
         "SupaflyFPV",
         "4S",
         "6S",
+        "8S",
         "Freestyle",
         "3 inch",
         "4 inch",
@@ -4713,7 +8393,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt",
-      "hash": "f68f5131112777f3d52687b8aaaa0eb024166b9b4d9558ba922b2a5ffdb03944",
+      "hash": "8b93f13163c8cad24e9c54b60d19c7824b05afb98dd108889e8a9d03b5c15e96",
       "title": "SupaflyFPV Freestyle 5 Inch",
       "firmware_version": [
         "4.5"
@@ -4725,6 +8405,7 @@
         "SupaflyFPV",
         "4S",
         "6S",
+        "8S",
         "Freestyle",
         "5 inch",
         "5\""
@@ -4734,7 +8415,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_6_and_EasyTune.txt",
-      "hash": "bf76b0083c271129934277bb1a787651cf0b828b576abb5a06c3c7b763e0cc3e",
+      "hash": "a79a55c90c2305b5a85b952e1baae666cc2c26dc7367928d7ae10a4aa4dacbe7",
       "title": "SupaflyFPV Freestyle 6 Inch",
       "firmware_version": [
         "4.5"
@@ -4744,6 +8425,9 @@
       "keywords": [
         "Supafly",
         "SupaflyFPV",
+        "4S",
+        "6S",
+        "8s",
         "Freestyle",
         "6 inch",
         "6\""
@@ -4753,7 +8437,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_7_Inch_EasyTune.txt",
-      "hash": "30c158d3d2f6dfb239a06b41d6c47af63043c6b4687b77e68c41324524f6986b",
+      "hash": "0202aaab4dbc3ffe40e9145ac5cf0fcd0a13cf0794e0d2b8035f0c3302f54f2c",
       "title": "SupaflyFPV Freestyle 7 Inch",
       "firmware_version": [
         "4.5"
@@ -4763,6 +8447,9 @@
       "keywords": [
         "Supafly",
         "SupaflyFPV",
+        "4S",
+        "6S",
+        "8s",
         "Freestyle",
         "7 inch",
         "7\""
@@ -4772,7 +8459,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_10in.txt",
-      "hash": "51bad75922d125a8cd2595b0af271f2b490603e0d408f482a1befb39dc70dac0",
+      "hash": "7deed16de68d93472bf8cd6fa7b585836de5c412dacd435fb45a60c3f9a3250b",
       "title": "UAV Tech - 10\" (1400-1700g | 31xx motors)",
       "firmware_version": [
         "4.5",
@@ -4792,7 +8479,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_5in_Freestyle_575-650.txt",
-      "hash": "70ee6c4d0e405f59fbcc89ef350620132916f1c950a81b49ca6ec3e60395e93f",
+      "hash": "573e5c353746bf80185e8de9605f1ff1fa5676532e717408668cc3168f1ab18f",
       "title": "UAV Tech - 5\" Freestyle withOUT GoPro (575-650g AUW)",
       "firmware_version": [
         "4.5",
@@ -4812,7 +8499,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_5in_Freestyle_650-750.txt",
-      "hash": "9aa601d0a073ac34cea913d8ab6ba35af055082a36e81a38ca892cba83e58caf",
+      "hash": "9ca96f53cb4a45c84dcb61a86bf0737c86807e6561ea29c278af8a2727bed49f",
       "title": "UAV Tech - 5\" Freestyle with GoPro (650-750g AUW)",
       "firmware_version": [
         "4.5",
@@ -4832,7 +8519,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_5in_Race_500-575.txt",
-      "hash": "966d06941c08826c50fe57fd6e6ad5aac8e928b3acfe87971b2828dfc58dba0f",
+      "hash": "b5b015b61f66838a6d75a7d1080a5b34af5fb9498c6fae70d100636b5a1be1f5",
       "title": "UAV Tech - 5\" Race (500-550g AUW)",
       "firmware_version": [
         "4.5",
@@ -4853,7 +8540,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_6-7in.txt",
-      "hash": "dbc4f6923cff2ba3f9c789c33617399c63eebecc020250b9d97c25116fc25fed",
+      "hash": "0b527162be1a506ed0447300e5506330172ed8b29328185c82caa1b90b2299b1",
       "title": "UAV Tech - 6\"/7\" (750-1000g AUW)",
       "firmware_version": [
         "4.5",
@@ -4876,7 +8563,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_8-9in.txt",
-      "hash": "ce70b7c1e5d1e0c7611a559f053df45323d698cdcf12e8e39a6f072b02afefab",
+      "hash": "7bd9ff86fc79583865d0c7b3949147413a0237ee56756fddd4089427a9d72b7a",
       "title": "UAV Tech - 8\"/9\" (1000-1400 AUW)",
       "firmware_version": [
         "4.5",
@@ -4899,7 +8586,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Cinelifter_8-9in.txt",
-      "hash": "10ed57bb583ffe2dcbf02689bb4f1b4dc765e762540e25820c3442eb42b04e48",
+      "hash": "475fc646ffb14f97882d2523707a211baad0cdc6f6985f1046da52922648c988",
       "title": "UAV Tech - Cinelifter (8\"/9\" >2,000g AUW)",
       "firmware_version": [
         "4.5",
@@ -4921,7 +8608,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Cinelog.txt",
-      "hash": "24dff31867d47e5fdbf85318213927e3a682200e84f0e5da856fb85e5f24f635",
+      "hash": "331c91b9f78403f87a1f6108283d146d7a9f375c6cafd8f043cedc1db20a6e6d",
       "title": "UAV Tech - Cinelog (250-300g AUW)",
       "firmware_version": [
         "4.5",
@@ -4937,7 +8624,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Cinewhoop.txt",
-      "hash": "bb323c0fb2e43b52017630c6858d87c05b6f13f3c206df20156d2a1228ffe2c0",
+      "hash": "4a4afd541bde313826b7a7c5578f58bc99df2af379ddde19b8b6da2a5b7e4268",
       "title": "UAV Tech - Cinewhoop",
       "firmware_version": [
         "4.5",
@@ -4953,7 +8640,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Micro.txt",
-      "hash": "a388080609e33e07f2733cd0d6ed7e7cd1c24ff4f09bd4dc338668027c203e16",
+      "hash": "0f54edf3c92ec1994bc015508b3fbb25a82a224a0c8651dd4b4dc31f2dc6efc3",
       "title": "UAV Tech - Micro (2\" to 4\")",
       "firmware_version": [
         "4.5",
@@ -4978,7 +8665,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Whoop.txt",
-      "hash": "e2382de6f47004bd66a1c3a3d267e2c155a4ba71313e15bf097137d2251905a2",
+      "hash": "cdae5c5f40df5358f2a49eda96af59c9705773fc104fcccf4182fe0c95d3bef7",
       "title": "UAV Tech - Whoop (1S & 2S)",
       "firmware_version": [
         "4.5",
@@ -4993,8 +8680,31 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/tune/UWL-FreshBread.txt",
+      "hash": "ef4ad868fe928e79126e9d3ec7100bdd736cf22f6f4436401c5d276168c70dd4",
+      "title": "UWL 75mm Whoop Tune by FreshBread",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "UWL",
+        "underground",
+        "Whoop",
+        "75mm",
+        "tune",
+        "acro",
+        "1S",
+        "FreshBread"
+      ],
+      "author": "FPV_Cam",
+      "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
       "fullPath": "presets/4.5/tune/we-are-fpv/JeNo-5.1-FR.txt",
-      "hash": "fd4928ce641dd53e143e60dd719666ee1a36294e3c2c7efb9dd6246a4dfef9d6",
+      "hash": "1565c60a405384b477840f48def3b6ae99fd772cc03b45bc3626bd00d45bd1ce",
       "title": "JeNo 5.1\" (FR)",
       "firmware_version": [
         "4.5"
@@ -5017,7 +8727,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/we-are-fpv/JeNo-5.1.txt",
-      "hash": "b0133dafd1e7990b79164a9b5be6026a74a5a377facb35cfef1b4f6d21c23c3d",
+      "hash": "18cb6e5db69aa8a4cd33bc7026c9cc4689c969023408570a86cbc19681f7c201",
       "title": "JeNo 5.1\"",
       "firmware_version": [
         "4.5"
@@ -5086,8 +8796,31 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/vtx/BetaFPV_AirFC.txt",
+      "hash": "671e51c4cc16a0cfd5931db75c9addce77b4a4648afcfc63e4d1f9f892ba3032",
+      "title": "BetaFPV Air Brushless FC 4in1 VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.5"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "vtx",
+        "vtx table",
+        "vtxtable",
+        "betafpv",
+        "4in1",
+        "air"
+      ],
+      "author": "YarosFPV (Yaroslav Syubayev)",
+      "priority": 1000000
+    },
+    {
       "fullPath": "presets/4.5/vtx/HDZero.txt",
-      "hash": "9050972b8402eddb537077960adba66b448d73d040a9c52e4b1b9867fba234b9",
+      "hash": "36a8d40ec3ee14d918a492d9469865097aebd786d583ade5b49e0acf0d8fdc58",
       "title": "HDZero VTXs",
       "firmware_version": [
         "4.5"

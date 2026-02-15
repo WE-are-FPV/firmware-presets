@@ -38,12 +38,7 @@
 #$ INCLUDE: presets/4.5/filters/defaults.txt
 
 # -- Gyro lowpass filters --
-set gyro_lpf2_static_hz = 600
-set gyro_lpf1_dyn_min_hz = 500
-set gyro_lpf1_dyn_max_hz = 1000
-set acc_lpf_hz = 10
-set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 200
+set gyro_lpf1_static_hz = 0
 
 # -- Gyro Dynamic Notches --
 set dyn_notch_count = 1
@@ -56,6 +51,7 @@ set dterm_lpf1_dyn_expo = 10
 
 # -- RPM filtering --
 set dshot_bidir = ON
+set rpm_filter_weights = 100,20,100
 set rpm_filter_fade_range_hz = 100
 set motor_poles = 12
 
@@ -65,7 +61,7 @@ set thrust_linear = 0
 set throttle_boost = 7
 
 # -- iTerm  --
-set iterm_relax_cutoff = 20
+set iterm_relax_cutoff = 45
 
 # -- PIDsum limits --
 set iterm_limit = 500
@@ -113,6 +109,75 @@ set tpa_breakpoint = 1250
     #$ INCLUDE: presets/4.4/leds/quaddiction_tinytrainer.txt
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): sugarK's rates
-    #$ INCLUDE: presets/4.3/rates/SugarK.txt
-#$ OPTION END
+#$ OPTION_GROUP BEGIN: Some popular RC Links
+
+    #$ OPTION BEGIN (UNCHECKED): Tracer/ELRS 250Hz
+        # Tracer/ELRS 250Hz
+        
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        #$ INCLUDE: presets/4.3/rc_link/generic/250hz_race.txt
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
+        # ERLS 500Hz
+        
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): ELRS 1000Hz
+        # ELRS 1000Hz
+       
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+         #$ INCLUDE: presets/4.3/rc_link/generic/1000hz_race.txt
+         
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Ghost 250Hz
+        # Ghost 250Hz
+      
+        feature RX_SERIAL
+        set serialrx_provider = GHST
+
+         #$ INCLUDE: presets/4.3/rc_link/generic/250hz_race.txt
+
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Ghost 500Hz
+        # Ghost 500Hz
+       
+        feature RX_SERIAL
+        set serialrx_provider = GHST
+
+         #$ INCLUDE: presets/4.3/rc_link/generic/500hz_race.txt
+         
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Secret sauce stick feel 
+        set feedforward_jitter_factor = 0
+        
+    #$ OPTION END
+    
+#$ OPTION_GROUP END
+
+#$ OPTION_GROUP BEGIN: Optional rates
+    #$ OPTION BEGIN (UNCHECKED): sugarK's rates
+        #$ INCLUDE: presets/4.3/rates/SugarK.txt
+        
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): Throttle curve for 6s racer
+        set thr_mid = 45
+        set thr_expo = 65
+        
+     #$ OPTION END
+     
+#$ OPTION_GROUP END
